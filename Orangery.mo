@@ -4,7 +4,6 @@ model Orangery
   input Modelica.SIunits.Irradiance DHI;
   input Modelica.SIunits.Irradiance GHI;
   input Modelica.SIunits.Temperature DryTemp, WetTemp;
-  input Real Humidity;
   input Modelica.SIunits.Velocity WindSpeed;
   input Real WindDir;
   //Output State variables
@@ -37,8 +36,10 @@ model Orangery
   Modelica.Blocks.Math.MatrixGain DNISource(K = [1, 0, 0; 0, 1, 0; 0, 0, 1], nin = 3, nout = 3) annotation(Placement(visible = true, transformation(origin = {-390, 157.194}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Modelica.Blocks.Math.MatrixGain matrixGain(nin = 3, nout = 1, K = array(S1) * 0.1) annotation(Placement(visible = true, transformation(origin = {-345, 157.163}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Modelica.Blocks.Math.Abs abs1 annotation(Placement(visible = true, transformation(origin = {-313.397, 156.603}, extent = {{-6.603, -6.603}, {6.603, 6.603}}, rotation = 0)));
-  Modelica.Blocks.Math.Gain WindDirectionSource(k = Modelica.Constants.pi / 180) annotation(Placement(visible = true, transformation(origin = {-386.997, 260}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  GreenEnergy.WeatherDataConnectors.Humidity humidity annotation(Placement(visible = true, transformation(origin = {-385, 275}, extent = {{-10, -10}, {10, 10}}, rotation = 0), iconTransformation(origin = {-83.234, 92.593}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Blocks.Math.Gain gain1 annotation(Placement(visible = true, transformation(origin = {-335, 266.7}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
 equation
+  connect(humidity, gain1.u) annotation(Line(visible = true, origin = {-358, 270.85}, points = {{-27, 4.15}, {8, 4.15}, {8, -4.15}, {11, -4.15}}));
   connect(gain.y, convection.Gc) annotation(Line(visible = true, origin = {-261.844, 220.296}, points = {{-43.689, 7.648}, {21.844, 7.648}, {21.844, -15.296}}, color = {0, 0, 127}));
   connect(abs1.y, prescribedHeatFlow.Q_flow) annotation(Line(visible = true, origin = {-258.033, 156.739}, points = {{-48.1, -0.136}, {15.033, -0.136}, {15.033, 0.135}, {18.033, 0.135}}, color = {0, 0, 127}));
   connect(matrixGain.y[1], abs1.u) annotation(Line(visible = true, origin = {-325.99, 156.883}, points = {{-8.01, 0.28}, {1.67, 0.28}, {1.67, -0.28}, {4.67, -0.28}}, color = {0, 0, 127}));
@@ -53,7 +54,6 @@ equation
   //Input connections
   connect(DryTemp, AmbientTemperatureSource.T);
   connect(WindSpeed, WindSpeedSource.u);
-  connect(WindDir, WindDirectionSource.u);
   connect(DNI, DNISource.u);
   connect(DHI, DHISource.u);
   //Output Connections
