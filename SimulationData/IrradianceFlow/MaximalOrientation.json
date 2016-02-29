@@ -6,5 +6,629 @@
             3.14159,
             3.07807
         ]
+    },
+    "Cube": {
+        "TotalOptimized": 1.00695e6,
+        "Angles": [
+            0.0462637,
+            -0.878659,
+            1.38533
+        ]
+    },
+    "SquareCupola": {
+        "TotalOptimized": 2.17859e6,
+        "Angles": [
+            -3.00908,
+            2.74938,
+            3.08589
+        ]
+    },
+    "BiaugmentedTriangularPrism": {
+        "TotalOptimized": 1.96094e6,
+        "Angles": [
+            -0.801447,
+            2.50429,
+            2.12177
+        ]
+    },
+    "AugmentedTridiminishedIcosahedron": {
+        "TotalOptimized": 1.88023e6,
+        "Angles": [
+            -3.14159,
+            1.40529,
+            3.14159
+        ]
+    },
+    "TridiminishedIcosahedron": {
+        "TotalOptimized": 1.51203e6,
+        "Angles": [
+            -3.14159,
+            3.14159,
+            3.14159
+        ]
+    },
+    "{Antiprism, 4}": {
+        "TotalOptimized": 1.65683e6,
+        "Angles": [
+            1.16405,
+            -0.726383,
+            -0.240206
+        ]
+    },
+    "ElongatedSquarePyramid": {
+        "TotalOptimized": 1.60462e6,
+        "Angles": [
+            -1.9595,
+            0.905677,
+            1.28147
+        ]
+    },
+    "TriaugmentedTriangularPrism": {
+        "TotalOptimized": 2.33418e6,
+        "Angles": [
+            1.62544,
+            -3.06769,
+            -2.50403
+        ]
+    },
+    "GyroelongatedSquarePyramid": {
+        "TotalOptimized": 2.23405e6,
+        "Angles": [
+            -0.630956,
+            -0.20678,
+            0.636513
+        ]
+    },
+    "ElongatedSquareDipyramid": {
+        "TotalOptimized": 1.94971e6,
+        "Angles": [
+            1.41415,
+            1.88347,
+            1.24725
+        ]
+    },
+    "MetabidiminishedIcosahedron": {
+        "TotalOptimized": 2.31452e6,
+        "Angles": [
+            3.14155,
+            0.938881,
+            -0.0751066
+        ]
+    },
+    "{Antiprism, 5}": {
+        "TotalOptimized": 1.94505e6,
+        "Angles": [
+            -1.84945,
+            2.08011,
+            2.37551
+        ]
+    },
+    "{Prism, 5}": {
+        "TotalOptimized": 1.19069e6,
+        "Angles": [
+            1.14285,
+            1.22426,
+            0.451545
+        ]
+    },
+    "GyroelongatedSquareDipyramid": {
+        "TotalOptimized": 2.60789e6,
+        "Angles": [
+            2.17493,
+            -0.125757,
+            -0.179758
+        ]
+    },
+    "Sphenocorona": {
+        "TotalOptimized": 2.50856e6,
+        "Angles": [
+            -3.14159,
+            3.14159,
+            2.71784
+        ]
+    },
+    "BiaugmentedPentagonalPrism": {
+        "TotalOptimized": 2.26034e6,
+        "Angles": [
+            0.993741,
+            1.19316,
+            0.610936
+        ]
+    },
+    "TruncatedTetrahedron": {
+        "TotalOptimized": 1.31771e6,
+        "Angles": [
+            -0.206758,
+            0.41555,
+            1.12671
+        ]
+    },
+    "{Antiprism, 6}": {
+        "TotalOptimized": 2.27386e6,
+        "Angles": [
+            0.581448,
+            1.5708,
+            0.834024
+        ]
+    },
+    "ElongatedPentagonalPyramid": {
+        "TotalOptimized": 2.09979e6,
+        "Angles": [
+            -2.77859,
+            2.62707,
+            2.95802
+        ]
+    },
+    "GyroelongatedPentagonalPyramid": {
+        "TotalOptimized": 2.8801e6,
+        "Angles": [
+            -2.73721,
+            2.51882,
+            2.91091
+        ]
+    },
+    "{Prism, 6}": {
+        "TotalOptimized": 1.32126e6,
+        "Angles": [
+            -2.07036,
+            2.03774,
+            2.53313
+        ]
+    },
+    "AugmentedHexagonalPrism": {
+        "TotalOptimized": 1.91797e6,
+        "Angles": [
+            0.167012,
+            2.26476,
+            1.44117
+        ]
+    },
+    "MetabiaugmentedHexagonalPrism": {
+        "TotalOptimized": 2.47723e6,
+        "Angles": [
+            0.0112483,
+            2.1702,
+            1.55927
+        ]
+    },
+    "ParabiaugmentedHexagonalPrism": {
+        "TotalOptimized": 2.26344e6,
+        "Angles": [
+            0.791693,
+            -0.158427,
+            -0.549106
+        ]
+    },
+    "TriaugmentedHexagonalPrism": {
+        "TotalOptimized": 2.8547e6,
+        "Angles": [
+            0.207165,
+            1.5708,
+            1.36363
+        ]
+    },
+    "ElongatedPentagonalDipyramid": {
+        "TotalOptimized": 2.43827e6,
+        "Angles": [
+            -0.314169,
+            3.1338,
+            1.57333
+        ]
+    },
+    "Cuboctahedron": {
+        "TotalOptimized": 2.25153e6,
+        "Angles": [
+            1.67851,
+            -0.818158,
+            -0.00271277
+        ]
+    },
+    "Icosahedron": {
+        "TotalOptimized": 3.18732e6,
+        "Angles": [
+            2.57047,
+            -0.146488,
+            -0.48172
+        ]
+    },
+    "PentagonalGyrobicupola": {
+        "TotalOptimized": 3.52249e6,
+        "Angles": [
+            0.00702579,
+            2.00822,
+            1.00197
+        ]
+    },
+    "PentagonalOrthobicupola": {
+        "TotalOptimized": 3.52641e6,
+        "Angles": [
+            2.41515,
+            -1.85712,
+            -1.33418
+        ]
+    },
+    "Hebesphenomegacorona": {
+        "TotalOptimized": 3.56041e6,
+        "Angles": [
+            -2.71763,
+            2.36159,
+            2.87972
+        ]
+    },
+    "RhombicDodecahedron": {
+        "TotalOptimized": 1.93975e6,
+        "Angles": [
+            2.66342,
+            0.517163,
+            -0.260874
+        ]
+    },
+    "AugmentedTruncatedTetrahedron": {
+        "TotalOptimized": 2.53936e6,
+        "Angles": [
+            3.09467,
+            0.16042,
+            -0.0133846
+        ]
+    },
+    "{Antiprism, 10}": {
+        "TotalOptimized": 3.52218e6,
+        "Angles": [
+            -1.5038e-8,
+            2.127,
+            1.47923
+        ]
+    },
+    "GyroelongatedTriangularCupola": {
+        "TotalOptimized": 3.47299e6,
+        "Angles": [
+            -3.11457,
+            3.14159,
+            3.12458
+        ]
+    },
+    "ElongatedTriangularCupola": {
+        "TotalOptimized": 2.53729e6,
+        "Angles": [
+            -3.12874,
+            3.14159,
+            3.12713
+        ]
+    },
+    "SquareGyrobicupola": {
+        "TotalOptimized": 2.89667e6,
+        "Angles": [
+            3.14159,
+            -1.91238,
+            -0.785398
+        ]
+    },
+    "SquareOrthobicupola": {
+        "TotalOptimized": 2.88698e6,
+        "Angles": [
+            0.827177,
+            -0.518572,
+            -0.336687
+        ]
+    },
+    "SnubSquareAntiprism": {
+        "TotalOptimized": 4.16613e6,
+        "Angles": [
+            -0.711923,
+            1.76971,
+            1.26526
+        ]
+    },
+    "{Prism, 10}": {
+        "TotalOptimized": 1.95203e6,
+        "Angles": [
+            -0.650988,
+            1.96147,
+            1.46637
+        ]
+    },
+    "PentagonalRotunda": {
+        "TotalOptimized": 3.49662e6,
+        "Angles": [
+            -3.07186,
+            2.41927,
+            3.11022
+        ]
+    },
+    "GyroelongatedTriangularBicupola": {
+        "TotalOptimized": 4.15069e6,
+        "Angles": [
+            2.36053,
+            0.952227,
+            -0.206674
+        ]
+    },
+    "ElongatedTriangularGyrobicupola": {
+        "TotalOptimized": 3.19415e6,
+        "Angles": [
+            2.5953,
+            0.828282,
+            -0.122468
+        ]
+    },
+    "ElongatedTriangularOrthobicupola": {
+        "TotalOptimized": 3.21974e6,
+        "Angles": [
+            2.58288,
+            -0.475035,
+            -2.23689
+        ]
+    },
+    "ElongatedDodecahedron": {
+        "TotalOptimized": 1.94327e6,
+        "Angles": [
+            2.70381,
+            0.790256,
+            -0.187353
+        ]
+    },
+    "GyroelongatedSquareCupola": {
+        "TotalOptimized": 4.67886e6,
+        "Angles": [
+            -3.07301,
+            2.31445,
+            3.10834
+        ]
+    },
+    "RhombicIcosahedron": {
+        "TotalOptimized": 3.1973e6,
+        "Angles": [
+            0.856346,
+            -0.526424,
+            -0.315076
+        ]
+    },
+    "ElongatedSquareCupola": {
+        "TotalOptimized": 3.43108e6,
+        "Angles": [
+            -3.08516,
+            2.34676,
+            3.11416
+        ]
+    },
+    "GyroelongatedPentagonalCupola": {
+        "TotalOptimized": 6.01759e6,
+        "Angles": [
+            -3.09746,
+            2.84206,
+            3.12219
+        ]
+    },
+    "Dodecahedron": {
+        "TotalOptimized": 1.93979e6,
+        "Angles": [
+            2.78509,
+            0.541237,
+            -0.841825
+        ]
+    },
+    "ElongatedPentagonalCupola": {
+        "TotalOptimized": 4.45778e6,
+        "Angles": [
+            -3.10137,
+            2.82804,
+            3.12399
+        ]
+    },
+    "AugmentedDodecahedron": {
+        "TotalOptimized": 2.87897e6,
+        "Angles": [
+            -2.7186,
+            2.74125,
+            3.14159
+        ]
+    },
+    "MetabiaugmentedDodecahedron": {
+        "TotalOptimized": 3.55186e6,
+        "Angles": [
+            -3.14159,
+            -0.365106,
+            2.17841
+        ]
+    },
+    "ParabiaugmentedDodecahedron": {
+        "TotalOptimized": 3.1904e6,
+        "Angles": [
+            1.88025,
+            2.95834,
+            0.411949
+        ]
+    },
+    "TriaugmentedDodecahedron": {
+        "TotalOptimized": 4.00191e6,
+        "Angles": [
+            -2.35252,
+            0.323725,
+            2.853
+        ]
+    },
+    "PentagonalGyrocupolarotunda": {
+        "TotalOptimized": 4.45741e6,
+        "Angles": [
+            0.395644,
+            1.47568,
+            2.80974
+        ]
+    },
+    "PentagonalOrthocupolarotunda": {
+        "TotalOptimized": 4.45739e6,
+        "Angles": [
+            0.422567,
+            1.48138,
+            2.78337
+        ]
+    },
+    "SnubCube": {
+        "TotalOptimized": 6.01243e6,
+        "Angles": [
+            2.95205,
+            -0.437522,
+            -0.707154
+        ]
+    },
+    "GyroelongatedSquareBicupola": {
+        "TotalOptimized": 5.3873e6,
+        "Angles": [
+            -0.811796,
+            1.953,
+            1.52022
+        ]
+    },
+    "ElongatedSquareGyrobicupola": {
+        "TotalOptimized": 4.13851e6,
+        "Angles": [
+            3.10467,
+            -1.57079,
+            -2.22319
+        ]
+    },
+    "SmallRhombicuboctahedron": {
+        "TotalOptimized": 4.12331e6,
+        "Angles": [
+            3.09676,
+            -1.49763,
+            -0.808129
+        ]
+    },
+    "DuererSolid": {
+        "TotalOptimized": 1.32087e6,
+        "Angles": [
+            2.35847,
+            -1.6858,
+            -3.14159
+        ]
+    },
+    "TruncatedCube": {
+        "TotalOptimized": 2.25453e6,
+        "Angles": [
+            0.0354194,
+            -0.881716,
+            1.3821
+        ]
+    },
+    "TruncatedOctahedron": {
+        "TotalOptimized": 2.25216e6,
+        "Angles": [
+            3.14159,
+            -2.36777,
+            -2.34952
+        ]
+    },
+    "GyroelongatedPentagonalBicupola": {
+        "TotalOptimized": 6.63601e6,
+        "Angles": [
+            1.27039,
+            -1.5708,
+            -0.20884
+        ]
+    },
+    "GyroelongatedPentagonalRotunda": {
+        "TotalOptimized": 6.62005e6,
+        "Angles": [
+            -3.11006,
+            2.47774,
+            3.12737
+        ]
+    },
+    "ElongatedPentagonalGyrobicupola": {
+        "TotalOptimized": 5.06703e6,
+        "Angles": [
+            0.0690295,
+            2.06145,
+            0.82381
+        ]
+    },
+    "ElongatedPentagonalOrthobicupola": {
+        "TotalOptimized": 5.0753e6,
+        "Angles": [
+            2.6669,
+            -1.99372,
+            -1.06654
+        ]
+    },
+    "ElongatedPentagonalRotunda": {
+        "TotalOptimized": 5.06004e6,
+        "Angles": [
+            -3.1081,
+            2.23606,
+            3.12435
+        ]
+    },
+    "AugmentedTruncatedCube": {
+        "TotalOptimized": 4.05888e6,
+        "Angles": [
+            -3.14159,
+            2.36103,
+            3.13862
+        ]
+    },
+    "RhombicTriacontahedron": {
+        "TotalOptimized": 4.7474e6,
+        "Angles": [
+            2.69921,
+            0.262107,
+            -0.253638
+        ]
+    },
+    "Icosidodecahedron": {
+        "TotalOptimized": 5.06e6,
+        "Angles": [
+            -2.04426,
+            3.10458,
+            2.94435
+        ]
+    },
+    "PentagonalOrthobirotunda": {
+        "TotalOptimized": 5.08548e6,
+        "Angles": [
+            1.35528,
+            1.88675,
+            0.424542
+        ]
+    },
+    "BiaugmentedTruncatedCube": {
+        "TotalOptimized": 4.75304e6,
+        "Angles": [
+            2.71126,
+            0.804206,
+            -0.177794
+        ]
+    },
+    "DeltoidalIcositetrahedron": {
+        "TotalOptimized": 3.81687e6,
+        "Angles": [
+            -0.254867,
+            2.99134,
+            1.29556
+        ]
+    },
+    "GyroelongatedPentagonalCupolarotunda": {
+        "TotalOptimized": 7.58092e6,
+        "Angles": [
+            0.0463389,
+            1.2196,
+            3.11222
+        ]
+    },
+    "ElongatedPentagonalGyrocupolarotunda": {
+        "TotalOptimized": 6.02091e6,
+        "Angles": [
+            0.246512,
+            1.53683,
+            2.90835
+        ]
+    },
+    "ElongatedPentagonalOrthocupolarotunda": {
+        "TotalOptimized": 6.0209e6,
+        "Angles": [
+            0.233381,
+            1.54068,
+            2.92123
+        ]
     }
 }
