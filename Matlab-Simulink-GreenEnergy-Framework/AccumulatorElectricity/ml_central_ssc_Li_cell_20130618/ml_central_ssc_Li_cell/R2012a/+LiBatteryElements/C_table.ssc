@@ -1,0 +1,51 @@
+component C_table < foundation.electrical.branch
+    % C_table
+    % This block implements a variable capacitance C, and assumes the
+    % capacitance does not change quickly.
+    
+    % Copyright 2012 The MathWorks, Inc.
+    
+    inputs
+        T = {20,'C'}; %T:left
+        SOC = {1,'1'}; %SOC:left
+    end
+    
+    parameters (Size=variable)
+        C_Table = {ones(5,3),'F'} % Capacitance Table vs SOC, Temp (MxN array)
+        SOC_Table = {[0;0.1;0.5;0.9;1],'1'} % SOC Breakpoints (1xN array)
+        Temp_Table = {[273.15 293.15 313.15],'K'} % Temperature Breakpoints (Mx1 array)
+    end
+    
+    parameters
+        v0 = {0,'V'}; % Initial voltage across capacitor
+    end
+    
+    function setup
+    
+    % Check parameter values
+    if any(any(value(C_Table,'F')<=0))
+        pm_error('simscape:GreaterThanZero','Capacitance Table vs SOC, Temp (MxN array)')
+    end
+    if any(value(SOC_Table,'1')<0)
+        pm_error('simscape:GreaterThanOrEqualToZero','SOC Breakpoints (Mx1 array)');
+    end
+    if any(value(Temp_Table,'K')<0)
+        pm_error('simscape:GreaterThanOrEqualToZero','Temperature Breakpoints (1xN array)');
+    end
+    
+    % Set the initial voltage
+    v = v0;
+    end
+    
+    equations
+        let
+            % Perform the table lookup
+            C = tablelookup(SOC_Table,Temp_Table,C_Table,SOC,T,...
+                interpolation=linear,extrapolation=nearest)
+        in
+            % Electrical Equation
+            i == C * v.der;
+        end
+    end
+    
+end

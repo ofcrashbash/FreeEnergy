@@ -1,0 +1,1990 @@
+Model {
+  Name			  "ssc_lithium_battery_1CellMultiplied"
+  Version		  7.9
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.44"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "windows-1252"
+  slprops.hdlmdlprops {
+    $PropName		    "HDLParams"
+    $ObjectID		    1
+    Array {
+      Type		      "Cell"
+      Dimension		      2
+      Cell		      "HDLSubsystem"
+      Cell		      "ssc_lithium_battery_1CellMultiplied"
+      PropName		      "mdlProps"
+    }
+  }
+  PreLoadFcn		  "ssc_lithium_battery_80Cells_ini\n"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  UserBdParams		  "PhysicalModelingChecksum;PhysicalModelingParameterChecksum;PhysicalModelingProducts"
+  PhysicalModelingChecksum "3045869306"
+  PhysicalModelingParameterChecksum "2610732565"
+  PhysicalModelingProducts "Simscape"
+  Created		  "Tue Jun 12 09:30:25 2012"
+  Creator		  "rjackey"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "rjackey"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri Sep 28 09:07:45 2012"
+  RTWModifiedTimeStamp	  270723144
+  ModelVersionFormat	  "1.%<AutoIncrement:44>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "disabled"
+  WideLines		  on
+  ShowLineDimensions	  on
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    2
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "ssc_lithium_battery_1CellMultiplied"
+    overrideMode_	    [0.0]
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "ssc_lithium_battery_1CellMultiplied"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      []
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      3
+      Version		      "1.12.0"
+      Array {
+	Type			"Handle"
+	Dimension		10
+	Simulink.SolverCC {
+	  $ObjectID		  4
+	  Version		  "1.12.0"
+	  StartTime		  "0.0"
+	  StopTime		  "40000"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "600"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "ode15s"
+	  SolverName		  "ode15s"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  5
+	  Version		  "1.12.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "ModelDataLogs"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  6
+	  Version		  "1.12.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseFloatMulNetSlope	  off
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  ParallelExecutionInRapidAccelerator on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  7
+	  Version		  "1.12.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Enable All"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "warning"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  8
+	  Version		  "1.12.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  9
+	  Version		  "1.12.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  10
+	  Version		  "1.12.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  11
+	  Version		  "1.12.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    9
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      12
+	      Version		      "1.12.0"
+	      Array {
+		Type			"Cell"
+		Dimension		21
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      13
+	      Version		      "1.12.0"
+	      Array {
+		Type			"Cell"
+		Dimension		16
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"PortableWordSizes"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      CodeReplacementLibrary  "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      CodeExecutionProfiling  off
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns on
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      GRTInterface	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  14
+	  Version		  "1.12.0"
+	  Description		  "HDL Coder custom configuration component"
+	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    ""
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
+	}
+	SSC.SimscapeCC {
+	  $ObjectID		  15
+	  Version		  "1.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "Name"
+	    PropName		    "DisabledProps"
+	  }
+	  Name			  "Simscape"
+	  EditingMode		  "Full"
+	  ExplicitSolverDiagnosticOptions "warning"
+	  GlobalZcOffDiagnosticOptions "warning"
+	  SimscapeLogType	  "none"
+	  SimscapeLogName	  "simlog"
+	  SimscapeLogDecimation	  1
+	  SimscapeLogLimitData	  on
+	  SimscapeLogDataHistory  5000
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 979, 10, 1907, 754 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    3
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      FromWorkspace
+      VariableName	      "simulink_input"
+      OutDataTypeStr	      "Inherit: auto"
+      SampleTime	      "-1"
+      Interpolate	      on
+      ZeroCross		      off
+      OutputAfterFinalValue   "Extrapolation"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      PMIOPort
+    }
+    Block {
+      BlockType		      Scope
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      DataFormat	      "Array"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+    }
+  }
+  System {
+    Name		    "ssc_lithium_battery_1CellMultiplied"
+    Location		    [13, 82, 829, 651]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "181"
+    Block {
+      BlockType		      Scope
+      Name		      "Battery\nScope"
+      SID		      "61"
+      Ports		      [2]
+      Position		      [735, 115, 780, 155]
+      BackgroundColor	      "green"
+      Floating		      off
+      Location		      [411, 392, 1127, 1080]
+      Open		      on
+      NumInputPorts	      "2"
+      ZoomMode		      "yonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+	axes2			"%<SignalLabel>"
+      }
+      List {
+	ListType		ScopeGraphics
+	FigureColor		"[0.501960784313725 0.501960784313725 0.501960784313725]"
+	AxesColor		"[0 0 0]"
+	AxesTickColor		"[1 1 1]"
+	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	LineStyles		"-|-|-|-|-|-"
+	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
+	MarkerStyles		"none|none|none|none|none|none"
+      }
+      ShowLegends	      off
+      TimeRange		      "40000"
+      YMin		      "-30~250"
+      YMax		      "10~350"
+      SaveName		      "ScopeData1"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Battery of\n1 Cell with\nMultiplier"
+      SID		      "74"
+      Ports		      [0, 1, 0, 0, 0, 2, 1]
+      Position		      [399, 175, 521, 285]
+      BlockRotation	      270
+      BackgroundColor	      "magenta"
+      NamePlacement	      "alternate"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Battery of\n1 Cell with\nMultiplier"
+	Location		[739, 436, 1645, 774]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Reference
+	  Name			  "Controlled\nCurrent\nSource"
+	  SID			  "146"
+	  Ports			  [0, 0, 0, 0, 0, 1, 2]
+	  Position		  [305, 70, 345, 110]
+	  ZOrder		  6
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  LibraryVersion	  "1.1"
+	  SourceBlock		  "fl_lib/Electrical/Electrical Sources/Controlled Current\nSource"
+	  SourceType		  "Controlled Current\nSource"
+	  SourceFile		  "foundation.electrical.sources.controlled_current"
+	  ComponentPath		  "foundation.electrical.sources.controlled_current"
+	  ComponentVariants	  "foundation.electrical.sources.controlled_current"
+	  ComponentVariantNames	  "controlled_current"
+	  ClassName		  "controlled_current"
+	  SchemaVersion		  "1"
+	  i_Log			  "off"
+	  v_Log			  "off"
+	  LocalVarNames		  "|i|v"
+	  LocalVarDescs		  "|i|v"
+	  LocalVarLogging	  "[0 0]"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Controlled\nVoltage\nSource"
+	  SID			  "147"
+	  Ports			  [0, 0, 0, 0, 0, 1, 2]
+	  Position		  [160, 170, 200, 210]
+	  ZOrder		  7
+	  BlockRotation		  90
+	  LibraryVersion	  "1.1"
+	  SourceBlock		  "fl_lib/Electrical/Electrical Sources/Controlled Voltage\nSource"
+	  SourceType		  "Controlled Voltage\nSource"
+	  SourceFile		  "foundation.electrical.sources.controlled_voltage"
+	  ComponentPath		  "foundation.electrical.sources.controlled_voltage"
+	  ComponentVariants	  "foundation.electrical.sources.controlled_voltage"
+	  ComponentVariantNames	  "controlled_voltage"
+	  ClassName		  "controlled_voltage"
+	  SchemaVersion		  "1"
+	  i_Log			  "off"
+	  v_Log			  "off"
+	  LocalVarNames		  "|i|v"
+	  LocalVarDescs		  "|i|v"
+	  LocalVarLogging	  "[0 0]"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Convective\nHeat Transfer1"
+	  SID			  "75"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [690, 61, 730, 89]
+	  BlockRotation		  180
+	  ShowName		  off
+	  LibraryVersion	  "1.1"
+	  SourceBlock		  "fl_lib/Thermal/Thermal Elements/Convective Heat\nTransfer"
+	  SourceType		  "Convective Heat\nTransfer"
+	  SourceFile		  "foundation.thermal.elements.convection"
+	  ComponentPath		  "foundation.thermal.elements.convection"
+	  ComponentVariants	  "foundation.thermal.elements.convection"
+	  ComponentVariantNames	  "convection"
+	  ClassName		  "conv_heat_transfer"
+	  SchemaVersion		  "1"
+	  area			  "cell_area"
+	  area_unit		  "m^2"
+	  heat_tr_coeff		  "h_conv_end"
+	  heat_tr_coeff_unit	  "W/(m^2 * K)"
+	  Q_Log			  "off"
+	  T_Log			  "off"
+	  LocalVarNames		  "|heat_flow|temperature_diff"
+	  LocalVarDescs		  "|Heat flow (J/s)|Temperature difference (K)"
+	  LocalVarLogging	  "[0 0]"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Convective\nHeat Transfer2"
+	  SID			  "76"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [690, 106, 730, 134]
+	  BlockRotation		  180
+	  ShowName		  off
+	  LibraryVersion	  "1.1"
+	  SourceBlock		  "fl_lib/Thermal/Thermal Elements/Convective Heat\nTransfer"
+	  SourceType		  "Convective Heat\nTransfer"
+	  SourceFile		  "foundation.thermal.elements.convection"
+	  ComponentPath		  "foundation.thermal.elements.convection"
+	  ComponentVariants	  "foundation.thermal.elements.convection"
+	  ComponentVariantNames	  "convection"
+	  ClassName		  "conv_heat_transfer"
+	  SchemaVersion		  "1"
+	  area			  "cell_area"
+	  area_unit		  "m^2"
+	  heat_tr_coeff		  "h_conv_end"
+	  heat_tr_coeff_unit	  "W/(m^2 * K)"
+	  Q_Log			  "off"
+	  T_Log			  "off"
+	  LocalVarNames		  "|heat_flow|temperature_diff"
+	  LocalVarDescs		  "|Heat flow (J/s)|Temperature difference (K)"
+	  LocalVarLogging	  "[0 0]"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Current Sensor"
+	  SID			  "148"
+	  Ports			  [0, 0, 0, 0, 0, 1, 2]
+	  Position		  [170, 80, 210, 120]
+	  ZOrder		  9
+	  BlockRotation		  90
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.1"
+	  SourceBlock		  "fl_lib/Electrical/Electrical Sensors/Current Sensor"
+	  SourceType		  "Current Sensor"
+	  SourceFile		  "foundation.electrical.sensors.current"
+	  ComponentPath		  "foundation.electrical.sensors.current"
+	  ComponentVariants	  "foundation.electrical.sensors.current"
+	  ComponentVariantNames	  "current"
+	  ClassName		  "current"
+	  SchemaVersion		  "1"
+	  i1_Log		  "off"
+	  v1_Log		  "off"
+	  LocalVarNames		  "|i1|v1"
+	  LocalVarDescs		  "|i1|v1"
+	  LocalVarLogging	  "[0 0]"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Electrical Reference1"
+	  SID			  "149"
+	  Ports			  [0, 0, 0, 0, 0, 1]
+	  Position		  [450, 210, 490, 250]
+	  ZOrder		  22
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  ShowName		  off
+	  LibraryVersion	  "1.1"
+	  SourceBlock		  "fl_lib/Electrical/Electrical Elements/Electrical Reference"
+	  SourceType		  "Electrical Reference"
+	  SourceFile		  "foundation.electrical.elements.reference"
+	  ComponentPath		  "foundation.electrical.elements.reference"
+	  ComponentVariants	  "foundation.electrical.elements.reference"
+	  ComponentVariantNames	  "reference"
+	  ClassName		  "reference_electrical"
+	  SchemaVersion		  "1"
+	  i_Log			  "off"
+	  LocalVarNames		  "|i"
+	  LocalVarDescs		  "|i"
+	  LocalVarLogging	  "[]"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Lithium Cell 1"
+	  SID			  "179"
+	  Ports			  [0, 1, 0, 0, 0, 2, 1]
+	  Position		  [540, 23, 615, 92]
+	  AttributesFormatString  "%<Battery>"
+	  LibraryVersion	  "1.29"
+	  SourceBlock		  "LiBatteryBlocks/Lithium Cell"
+	  SourceType		  "Battery Cell"
+	  Battery		  "BatteryParams(1)"
+	  Port {
+	    PortNumber		    1
+	    Name		    "measurements"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Series Cells\nMultiplier"
+	  SID			  "177"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [285, 220, 325, 260]
+	  ZOrder		  8
+	  BlockMirror		  on
+	  LibraryVersion	  "1.1"
+	  SourceBlock		  "fl_lib/Physical Signals/Functions/PS Gain"
+	  SourceType		  "PS Gain"
+	  SourceFile		  "foundation.physical_signal.functions.gain"
+	  ComponentPath		  "foundation.physical_signal.functions.gain"
+	  ComponentVariants	  "foundation.physical_signal.functions.gain"
+	  ComponentVariantNames	  "gain"
+	  ClassName		  "gain"
+	  SchemaVersion		  "1"
+	  gain			  "numCells"
+	  gain_unit		  "1"
+	  LocalVarLogging	  "[]"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Voltage\nSensor"
+	  SID			  "178"
+	  Ports			  [0, 0, 0, 0, 0, 1, 2]
+	  Position		  [410, 70, 450, 110]
+	  ZOrder		  4
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  LibraryVersion	  "1.1"
+	  SourceBlock		  "fl_lib/Electrical/Electrical Sensors/Voltage Sensor"
+	  SourceType		  "Voltage Sensor"
+	  SourceFile		  "foundation.electrical.sensors.voltage"
+	  ComponentPath		  "foundation.electrical.sensors.voltage"
+	  ComponentVariants	  "foundation.electrical.sensors.voltage"
+	  ComponentVariantNames	  "voltage"
+	  ClassName		  "voltage"
+	  SchemaVersion		  "1"
+	  i1_Log		  "off"
+	  v1_Log		  "off"
+	  LocalVarNames		  "|i1|v1"
+	  LocalVarDescs		  "|i1|v1"
+	  LocalVarLogging	  "[0 0]"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "+"
+	  SID			  "78"
+	  Position		  [65, 48, 95, 62]
+	  Port			  "1"
+	  Side			  "Left"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "-"
+	  SID			  "79"
+	  Position		  [65, 238, 95, 252]
+	  Port			  "2"
+	  Side			  "Left"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "T"
+	  SID			  "80"
+	  Position		  [830, 68, 860, 82]
+	  BlockMirror		  on
+	  Port			  "3"
+	  Side			  "Right"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "m"
+	  SID			  "84"
+	  Position		  [830, 33, 860, 47]
+	  ZOrder		  -9
+	  ForegroundColor	  "red"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  Name			  "measurements"
+	  Labels		  [1, 0]
+	  SrcBlock		  "Lithium Cell 1"
+	  SrcPort		  1
+	  DstBlock		  "m"
+	  DstPort		  1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Current Sensor"
+	  SrcPort		  RConn2
+	  DstBlock		  "Controlled\nVoltage\nSource"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Convective\nHeat Transfer1"
+	  SrcPort		  RConn1
+	  Points		  [-25, 0]
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    DstBlock		    "Lithium Cell 1"
+	    DstPort		    RConn1
+	  }
+	  Branch {
+	    ConnectType		    "DEST_DEST"
+	    SrcBlock		    "Convective\nHeat Transfer2"
+	    SrcPort		    RConn1
+	    Points		    [-25, 0; 0, -45]
+	  }
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Convective\nHeat Transfer1"
+	  SrcPort		  LConn1
+	  Points		  [25, 0]
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    DstBlock		    "T"
+	    DstPort		    RConn1
+	  }
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    Points		    [0, 45]
+	    DstBlock		    "Convective\nHeat Transfer2"
+	    DstPort		    LConn1
+	  }
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Controlled\nCurrent\nSource"
+	  SrcPort		  LConn1
+	  Points		  [0, -15; 105, 0]
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    DstBlock		    "Lithium Cell 1"
+	    DstPort		    LConn1
+	  }
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    DstBlock		    "Voltage\nSensor"
+	    DstPort		    LConn1
+	  }
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Controlled\nCurrent\nSource"
+	  SrcPort		  RConn2
+	  Points		  [0, 55; 105, 0]
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    Points		    [30, 0]
+	    Branch {
+	      ConnectType	      "DEST_SRC"
+	      Points		      [55, 0]
+	      DstBlock		      "Lithium Cell 1"
+	      DstPort		      LConn2
+	    }
+	    Branch {
+	      ConnectType	      "DEST_SRC"
+	      DstBlock		      "Electrical Reference1"
+	      DstPort		      LConn1
+	    }
+	  }
+	  Branch {
+	    ConnectType		    "DEST_DEST"
+	    SrcBlock		    "Voltage\nSensor"
+	    SrcPort		    RConn2
+	    Points		    [0, 55]
+	  }
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Controlled\nCurrent\nSource"
+	  SrcPort		  RConn1
+	  Points		  [0, 10]
+	  DstBlock		  "Current Sensor"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "-"
+	  SrcPort		  RConn1
+	  Points		  [60, 0]
+	  DstBlock		  "Controlled\nVoltage\nSource"
+	  DstPort		  RConn2
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "+"
+	  SrcPort		  RConn1
+	  Points		  [80, 0]
+	  DstBlock		  "Current Sensor"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Controlled\nVoltage\nSource"
+	  SrcPort		  RConn1
+	  Points		  [0, 15]
+	  DstBlock		  "Series Cells\nMultiplier"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Voltage\nSensor"
+	  SrcPort		  RConn1
+	  Points		  [0, 115]
+	  DstBlock		  "Series Cells\nMultiplier"
+	  DstPort		  LConn1
+	}
+      }
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Cell\nScope"
+      SID		      "27"
+      Ports		      [3]
+      Position		      [735, 17, 780, 73]
+      BackgroundColor	      "green"
+      Floating		      off
+      Location		      [1146, 56, 1890, 1077]
+      Open		      on
+      NumInputPorts	      "3"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+	axes2			"%<SignalLabel>"
+	axes3			"%<SignalLabel>"
+      }
+      List {
+	ListType		ScopeGraphics
+	FigureColor		"[0.501960784313725 0.501960784313725 0.501960784313725]"
+	AxesColor		"[0 0 0]"
+	AxesTickColor		"[1 1 1]"
+	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	LineStyles		"-|-|-|-|-|-"
+	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
+	MarkerStyles		"none|none|none|none|none|none"
+      }
+      ShowLegends	      off
+      TimeRange		      "40000"
+      YMin		      "20~0~3"
+      YMax		      "23.5~1~4.5"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Demux
+      Name		      "Demux"
+      SID		      "180"
+      Ports		      [1, 3]
+      Position		      [570, 13, 575, 77]
+      ZOrder		      -7
+      ShowName		      off
+      Outputs		      "3"
+      DisplayOption	      "bar"
+      Port {
+	PortNumber		1
+	Name			"T"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		2
+	Name			"SOC"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		3
+	Name			"V"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Electrical Reference1"
+      SID		      "73"
+      Ports		      [0, 0, 0, 0, 0, 1]
+      Position		      [625, 355, 665, 395]
+      ZOrder		      9
+      BlockRotation	      270
+      BlockMirror	      on
+      ShowName		      off
+      LibraryVersion	      "1.1"
+      SourceBlock	      "fl_lib/Electrical/Electrical Elements/Electrical Reference"
+      SourceType	      "Electrical Reference"
+      SourceFile	      "foundation.electrical.elements.reference"
+      ComponentPath	      "foundation.electrical.elements.reference"
+      ComponentVariants	      "foundation.electrical.elements.reference"
+      ComponentVariantNames   "reference"
+      ClassName		      "reference"
+      SchemaVersion	      "1"
+      i_Log		      "off"
+      LocalVarNames	      "|i"
+      LocalVarDescs	      "|i"
+      LocalVarLogging	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Electrical Reference2"
+      SID		      "24"
+      Ports		      [0, 0, 0, 0, 0, 1]
+      Position		      [520, 375, 560, 415]
+      ZOrder		      9
+      BlockRotation	      180
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      ShowName		      off
+      LibraryVersion	      "1.1"
+      SourceBlock	      "fl_lib/Electrical/Electrical Elements/Electrical Reference"
+      SourceType	      "Electrical Reference"
+      SourceFile	      "foundation.electrical.elements.reference"
+      ComponentPath	      "foundation.electrical.elements.reference"
+      ComponentVariants	      "foundation.electrical.elements.reference"
+      ComponentVariantNames   "reference"
+      ClassName		      "reference"
+      SchemaVersion	      "1"
+      i_Log		      "off"
+      LocalVarNames	      "|i"
+      LocalVarDescs	      "|i"
+      LocalVarLogging	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Ideal\nTemperature\nSource"
+      SID		      "71"
+      Ports		      [0, 0, 0, 0, 0, 1, 2]
+      Position		      [340, 78, 380, 107]
+      BlockMirror	      on
+      LibraryVersion	      "1.1"
+      SourceBlock	      "fl_lib/Thermal/Thermal Sources/Ideal Temperature\nSource"
+      SourceType	      "Ideal Temperature\nSource"
+      SourceFile	      "foundation.thermal.sources.temperature"
+      ComponentPath	      "foundation.thermal.sources.temperature"
+      ComponentVariants	      "foundation.thermal.sources.temperature"
+      ComponentVariantNames   "temperature"
+      ClassName		      "temperature_src"
+      SchemaVersion	      "1"
+      Q_Log		      "off"
+      T_Log		      "off"
+      LocalVarNames	      "|heat_flow|T_differential"
+      LocalVarDescs	      "|Heat flow rate through the source (J/s)|Temperature differential across the source (K)"
+      LocalVarLogging	      "[0 0]"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Input Current"
+      SID		      "26"
+      Ports		      [0, 0, 0, 0, 0, 1, 2]
+      Position		      [410, 330, 450, 370]
+      BlockRotation	      270
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      LibraryVersion	      "1.1"
+      SourceBlock	      "fl_lib/Electrical/Electrical Sources/Controlled Current\nSource"
+      SourceType	      "Controlled Current\nSource"
+      SourceFile	      "foundation.electrical.sources.controlled_current"
+      ComponentPath	      "foundation.electrical.sources.controlled_current"
+      ComponentVariants	      "foundation.electrical.sources.controlled_current"
+      ComponentVariantNames   "controlled_current"
+      ClassName		      "controlled_current_source"
+      SchemaVersion	      "1"
+      i_Log		      "off"
+      v_Log		      "off"
+      LocalVarNames	      "|current|voltage|power"
+      LocalVarDescs	      "|Current (A)|Voltage (V)|Power (W)"
+      LocalVarLogging	      "[0 0 0]"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "PS-Simulink\nConverter"
+      SID		      "60"
+      Ports		      [0, 1, 0, 0, 0, 1]
+      Position		      [595, 136, 630, 154]
+      ZOrder		      1
+      NamePlacement	      "alternate"
+      ShowName		      off
+      LibraryVersion	      "1.1"
+      SourceBlock	      "nesl_utility/PS-Simulink\nConverter"
+      SourceType	      "PS-Simulink\nConverter"
+      PhysicalDomain	      "network_engine_domain"
+      LeftPortType	      "input"
+      RightPortType	      "output"
+      SubClassName	      "ps_output"
+      Unit		      "V"
+      AffineConversion	      off
+      Port {
+	PortNumber		1
+	Name			"Battery Voltage"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Signal Builder1"
+      SID		      "63"
+      Tag		      "STV Subsys"
+      Ports		      [0, 2]
+      Position		      [15, 39, 135, 101]
+      ZOrder		      -20
+      BackgroundColor	      "orange"
+      CopyFcn		      "sigbuilder_block('copy');"
+      DeleteFcn		      "sigbuilder_block('delete');"
+      LoadFcn		      "sigbuilder_block('load');"
+      ModelCloseFcn	      "sigbuilder_block('modelClose');"
+      PreSaveFcn	      "sigbuilder_block('preSave');"
+      StartFcn		      "sigbuilder_block('start');"
+      PauseFcn		      "sigbuilder_block('pause');"
+      ContinueFcn	      "sigbuilder_block('continue');"
+      StopFcn		      "sigbuilder_block('stop');"
+      NameChangeFcn	      "sigbuilder_block('namechange');"
+      ClipboardFcn	      "sigbuilder_block('clipboard');"
+      OpenFcn		      "sigbuilder_block('open',[28.5 123.75 755.25 399.75 ]);"
+      CloseFcn		      "sigbuilder_block('close');"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      on
+      MaskType		      "Sigbuilder block"
+      MaskDescription	      "Simulink:masks:SigbuilderBlock_MD"
+      MaskInitialization      "if ~strcmp(get_param(bdroot(gcbh),'SimulationStatus'),'stopped') tuvar = sigbuilder_blo"
+      "ck('maskInit'); end"
+      MaskSelfModifiable      on
+      MaskDisplay	      "plot(0, 0, 100, 100,[2, 2, 32, 32, 2], [68, 8, 8, 68, 68],[32, 2], [38, 38], [32, 19, 2],[53,"
+      " 60, 44], [32, 17, 17, 2],[16, 16, 31, 31]);txt = getActiveGroup(gcbh);text(2, 100, txt,'verticalAlignment', 'to"
+      "p');"
+      MaskIconFrame	      on
+      MaskIconOpaque	      off
+      MaskIconRotate	      "port"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+      MaskCapabilities	      "slmaskedcaps(gcbh)"
+      Port {
+	PortNumber		1
+	Name			"Battery Current"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		2
+	Name			"Ambient Temperature"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      System {
+	Name			"Signal Builder1"
+	Location		[480, 85, 980, 386]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	SIDHighWatermark	"49"
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux"
+	  SID			  "63:1"
+	  Tag			  "STV Demux"
+	  Ports			  [1, 2]
+	  Position		  [150, 42, 160, 618]
+	  ZOrder		  -1
+	  Outputs		  "2"
+	}
+	Block {
+	  BlockType		  FromWorkspace
+	  Name			  "FromWs"
+	  SID			  "63:2"
+	  Tag			  "STV FromWs"
+	  Position		  [30, 300, 115, 350]
+	  ZOrder		  -2
+	  VariableName		  "tuvar"
+	  SampleTime		  "0"
+	  ZeroCross		  on
+	  SigBuilderData	  "DataTag0"
+	  VnvData		  "DataTag1"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Current"
+	  SID			  "63:48"
+	  Position		  [280, 30, 300, 40]
+	  ZOrder		  45
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Ambient Temp"
+	  SID			  "63:49"
+	  Tag			  "STV Outport"
+	  Position		  [280, 60, 300, 70]
+	  ZOrder		  46
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  1
+	  Points		  [50, 0; 0, -150]
+	  DstBlock		  "Current"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "FromWs"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  DstBlock		  "Demux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  2
+	  DstBlock		  "Ambient Temp"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Simulink-PS\nConverter"
+      SID		      "29"
+      Ports		      [1, 0, 0, 0, 0, 0, 1]
+      Position		      [310, 375, 340, 395]
+      ShowName		      off
+      LibraryVersion	      "1.1"
+      SourceBlock	      "nesl_utility/Simulink-PS\nConverter"
+      SourceType	      "Simulink-PS\nConverter"
+      PhysicalDomain	      "network_engine_domain"
+      LeftPortType	      "input"
+      RightPortType	      "output"
+      SubClassName	      "ps_input"
+      Unit		      "A"
+      AffineConversion	      on
+      InputFilterTimeConstant ".001"
+      UdotUserProvided	      "1"
+      SimscapeFilterOrder     "1"
+      InputFiltering	      "off"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Simulink-PS\nConverter1"
+      SID		      "30"
+      Ports		      [1, 0, 0, 0, 0, 0, 1]
+      Position		      [270, 75, 300, 95]
+      ShowName		      off
+      LibraryVersion	      "1.1"
+      SourceBlock	      "nesl_utility/Simulink-PS\nConverter"
+      SourceType	      "Simulink-PS\nConverter"
+      PhysicalDomain	      "network_engine_domain"
+      LeftPortType	      "input"
+      RightPortType	      "output"
+      SubClassName	      "ps_input"
+      Unit		      "C"
+      AffineConversion	      on
+      InputFilterTimeConstant ".001"
+      UdotUserProvided	      "1"
+      SimscapeFilterOrder     "1"
+      InputFiltering	      "off"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Solver\nConfiguration"
+      SID		      "31"
+      Ports		      [0, 0, 0, 0, 0, 0, 1]
+      Position		      [685, 320, 735, 340]
+      BlockMirror	      on
+      LibraryVersion	      "1.1"
+      SourceBlock	      "nesl_utility/Solver\nConfiguration"
+      SourceType	      "Solver\nConfiguration"
+      PhysicalDomain	      "network_engine_domain"
+      LeftPortType	      "input"
+      RightPortType	      "generic"
+      SubClassName	      "solver"
+      UseCustomDae	      off
+      DoDC		      off
+      ResidualTolerance	      "1e-9"
+      UseLocalSolver	      off
+      LocalSolverChoice	      "NE_BACKWARD_EULER_ADVANCER"
+      LocalSolverSampleTime   ".001"
+      DoFixedCost	      off
+      MaxNonlinIter	      "3"
+      MaxModeIter	      "2"
+      LinearAlgebra	      "Sparse"
+      Accelerate	      off
+      Profile		      off
+      UseLocalSampling	      off
+      DelaysMemoryBudget      "1024"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Thermal\nReference1"
+      SID		      "72"
+      Ports		      [0, 0, 0, 0, 0, 1]
+      Position		      [309, 125, 321, 135]
+      BlockRotation	      270
+      BlockMirror	      on
+      ShowName		      off
+      LibraryVersion	      "1.1"
+      SourceBlock	      "fl_lib/Thermal/Thermal Elements/Thermal Reference"
+      SourceType	      "Thermal Reference"
+      SourceFile	      "foundation.thermal.elements.reference"
+      ComponentPath	      "foundation.thermal.elements.reference"
+      ComponentVariants	      "foundation.thermal.elements.reference"
+      ComponentVariantNames   "reference"
+      ClassName		      "reference_thermal"
+      SchemaVersion	      "1"
+      Q_Log		      "off"
+      LocalVarNames	      "|Q"
+      LocalVarDescs	      "|Q"
+      LocalVarLogging	      "[]"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Voltage Sensor"
+      SID		      "58"
+      Ports		      [0, 0, 0, 0, 0, 1, 2]
+      Position		      [520, 300, 560, 340]
+      ZOrder		      2
+      LibraryVersion	      "1.1"
+      SourceBlock	      "fl_lib/Electrical/Electrical Sensors/Voltage Sensor"
+      SourceType	      "Voltage Sensor"
+      SourceFile	      "foundation.electrical.sensors.voltage"
+      ComponentPath	      "foundation.electrical.sensors.voltage"
+      ComponentVariants	      "foundation.electrical.sensors.voltage"
+      ComponentVariantNames   "voltage"
+      ClassName		      "voltage"
+      SchemaVersion	      "1"
+      i1_Log		      "off"
+      v1_Log		      "off"
+      LocalVarNames	      "|i1|v1"
+      LocalVarDescs	      "|i1|v1"
+      LocalVarLogging	      "[0 0]"
+    }
+    Line {
+      Name		      "SOC"
+      Labels		      [-1, 0]
+      SrcBlock		      "Demux"
+      SrcPort		      2
+      DstBlock		      "Cell\nScope"
+      DstPort		      2
+    }
+    Line {
+      Name		      "V"
+      Labels		      [-1, 0]
+      SrcBlock		      "Demux"
+      SrcPort		      3
+      DstBlock		      "Cell\nScope"
+      DstPort		      3
+    }
+    Line {
+      Name		      "Battery Voltage"
+      Labels		      [-1, 0]
+      SrcBlock		      "PS-Simulink\nConverter"
+      SrcPort		      1
+      DstBlock		      "Battery\nScope"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Battery of\n1 Cell with\nMultiplier"
+      SrcPort		      1
+      Points		      [0, -125]
+      DstBlock		      "Demux"
+      DstPort		      1
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Ideal\nTemperature\nSource"
+      SrcPort		      RConn1
+      DstBlock		      "Simulink-PS\nConverter1"
+      DstPort		      RConn1
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Thermal\nReference1"
+      SrcPort		      LConn1
+      Points		      [10, 0]
+      DstBlock		      "Ideal\nTemperature\nSource"
+      DstPort		      RConn2
+    }
+    Line {
+      Name		      "Battery Current"
+      Labels		      [0, 0]
+      SrcBlock		      "Signal Builder1"
+      SrcPort		      1
+      Points		      [110, 0]
+      Branch {
+	Points			[0, 330]
+	DstBlock		"Simulink-PS\nConverter"
+	DstPort			1
+      }
+      Branch {
+	Labels			[-1, 0]
+	Points			[285, 0; 0, 70]
+	DstBlock		"Battery\nScope"
+	DstPort			1
+      }
+    }
+    Line {
+      Name		      "Ambient Temperature"
+      Labels		      [0, 0]
+      SrcBlock		      "Signal Builder1"
+      SrcPort		      2
+      DstBlock		      "Simulink-PS\nConverter1"
+      DstPort		      1
+    }
+    Line {
+      Name		      "T"
+      Labels		      [-1, 0]
+      SrcBlock		      "Demux"
+      SrcPort		      1
+      DstBlock		      "Cell\nScope"
+      DstPort		      1
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Simulink-PS\nConverter"
+      SrcPort		      RConn1
+      DstBlock		      "Input Current"
+      DstPort		      RConn1
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Electrical Reference1"
+      SrcPort		      LConn1
+      Points		      [0, -10]
+      Branch {
+	ConnectType		"DEST_SRC"
+	DstBlock		"Voltage Sensor"
+	DstPort			RConn2
+      }
+      Branch {
+	ConnectType		"DEST_DEST"
+	SrcBlock		"Solver\nConfiguration"
+	SrcPort			RConn1
+	Points			[-25, 0]
+      }
+    }
+    Line {
+      LineType		      "Connection"
+      Points		      [430, 305; 0, -5]
+      DstBlock		      "Battery of\n1 Cell with\nMultiplier"
+      DstPort		      LConn1
+      Branch {
+	ConnectType		"SRC_SRC"
+	Points			[75, 0]
+	DstBlock		"Voltage Sensor"
+	DstPort			LConn1
+      }
+      Branch {
+	ConnectType		"SRC_DEST"
+	SrcBlock		"Input Current"
+	SrcPort			LConn1
+	Points			[0, -10]
+      }
+    }
+    Line {
+      LineType		      "Connection"
+      Points		      [490, 395; 0, -95]
+      DstBlock		      "Battery of\n1 Cell with\nMultiplier"
+      DstPort		      LConn2
+      Branch {
+	ConnectType		"SRC_DEST"
+	SrcBlock		"Input Current"
+	SrcPort			RConn2
+	Points			[0, 10; 50, 0]
+      }
+      Branch {
+	ConnectType		"SRC_SRC"
+	DstBlock		"Electrical Reference2"
+	DstPort			LConn1
+      }
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Voltage Sensor"
+      SrcPort		      RConn1
+      Points		      [0, -165]
+      DstBlock		      "PS-Simulink\nConverter"
+      DstPort		      LConn1
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Ideal\nTemperature\nSource"
+      SrcPort		      LConn1
+      Points		      [95, 0]
+      DstBlock		      "Battery of\n1 Cell with\nMultiplier"
+      DstPort		      RConn1
+    }
+    Annotation {
+      SID		      "65"
+      Name		      "Lithium Battery Pack"
+      Position		      [373, 438]
+      FontSize		      12
+      FontWeight	      "bold"
+    }
+    Annotation {
+      SID		      "66"
+      Name		      "This demo implements a model of a lithium battery pack. For the defining equations of each cell and"
+      " their validation, see T. Huria, M. Ceraolo, \nJ. Gazzarri, R. Jackey. \"High Fidelity Electrical Model with The"
+      "rmal Dependence for Characterization and Simulation of High Power Lithium \nBattery Cells,\" IEEE International "
+      "Electric Vehicle Conference, March 2012. A simple thermal model is used to model battery temperature. It is \nas"
+      "sumed that cooling is primarily via convection, and that heating is primarily from internal resistance. "
+      Position		      [54, 481]
+      HorizontalAlignment     "left"
+    }
+    Annotation {
+      SID		      "67"
+      Name		      "Copyright 2012 The MathWorks, Inc."
+      Position		      [376, 525]
+    }
+  }
+}
+MatData {
+  NumRecords		  2
+  DataRecord {
+    Tag			    DataTag1
+    Data		    "  %)30     .    R ,   8    (     @         %    \"     $    !     0         %  0 $0    $   #,    =F5R:6"
+    "9Y0FQK4&%T:',   !V97)I9GE\";&M(86YD;&5S '9N=DUG<DED>           86-T:79E1W)O=7        !R97%$:7-P4')C;G0      &)L:T1"
+    "I<W!-;V1E        9W)O=7!#;G0           !G<F]U<%)E<4-N=        &=R;W5P1$]/4E-I9       ;6]D96Q(              !B;&]C:"
+    "T@              &]V97)I9&53971T:6YG<P        X    P    !@    @    &          4    (               !          D    "
+    "     #@   #     &    \"     8         !0    @               $         \"0         .    ,     8    (    !@         "
+    "%    \"                0         )          X    X    !@    @    &          4    (     0    $    !          D    ("
+    "            \\#\\.    ,     8    (    !@         %    \"                0         )          X    P    !@    @    "
+    "&          4    (               !          D         #@   #@    &    \"     8         !0    @    !     0    $     "
+    "    \"0    @             0 X    P    !@    @    &          4    (               !          D         #@   #     & "
+    "   \"     8         !0    @               $         \"0         .    .     8    (    !@         %    \"     $    !"
+    "     0         )    \"           U0Q #@   #@    &    \"     8         !0    @    !     0    $         \"0    @    "
+    "     **!@0 X    P    !@    @    &          4    (               !          D         "
+  }
+  DataRecord {
+    Tag			    DataTag0
+    Data		    "  %)30     .    < \\   8    (     @         %    \"     $    !     0         %  0 %@    $   \"P    9W)I"
+    "9%-E='1I;F<              &-H86YN96QS                  !A>&5S                        8V]M;6]N                     &"
+    "1A=&%3970                   !D871A4V5T261X                :7-697)I9FEC871I;VY6:7-I8FQE '-B;V)J                    "
+    "   .    ,     8    (    !          %    \"     $    \"     0         0  ( ;VX   X    P!0  !@    @    \"          4"
+    "    (     0    (    !          4 !  *     0   %H   !S=&5P6       <W1E<%D      'E-:6X       !Y36%X        8V]L;W(  "
+    "    &QI;F53='EL90!L:6YE5VED=&@ ;&%B96P      &]U=$EN9&5X           .    .     8    (    !@         %    \"     $   "
+    " !     0         )    \"               #@   #@    &    \"     8         !0    @    !     0    $         \"0    @  "
+    "             X    X    !@    @    &          4    (     0    $    !          D    (            \\/\\.    .     8  "
+    "  (    !@         %    \"     $    !     0         )    \"            /!_#@   $@    &    \"     8         !0    @ "
+    "   !     P    $         \"0   !@   !\"/NC9K/KJ/P                     .    ,     8    (    !          %    \"     $"
+    "    !     0         0  $ +0    X    X    !@    @    &          4    (     0    $    !          D    (            ^"
+    "#\\.    .     8    (    !          %    \"     $    '     0         0    !P   $-U<G)E;G0 #@   #@    &    \"     8 "
+    "        !0    @    !     0    $         \"0    @           #P/PX    X    !@    @    &          4    (     0    $  "
+    "  !          D    (               .    .     8    (    !@         %    \"     $    !     0         )    \"        "
+    "       #@   #@    &    \"     8         !0    @    !     0    $         \"0    @           #P_PX    X    !@    @  "
+    "  &          4    (     0    $    !          D    (            \\'\\.    2     8    (    !@         %    \"     $ "
+    "   #     0         )    &    -B!<T:4]N8_          #8@7-&E/;F/PX    P    !@    @    $          4    (     0    $   "
+    " !         !   0 M    #@   #@    &    \"     8         !0    @    !     0    $         \"0    @           #X/PX   "
+    "!     !@    @    $          4    (     0    P    !         !     ,    06UB:65N=\"!496UP      X    X    !@    @    "
+    "&          4    (     0    $    !          D    (             $ .    \\ (   8    (     @         %    \"     $    "
+    "\"     0         %  0 \"P    $    W    8VAA;FYE;',   !Y3&EM         &QA8F5L4&]S    ;&%B96Q(      !L86)E;%!A=&-H   "
+    ".    .     8    (    !@         %    \"     $    !     0         )    \"             ! #@   $     &    \"     8   "
+    "      !0    @    !     @    $         \"0   !             S0        #5 #@   #     &    \"     0         !0    @   "
+    " !     @    $         $  \" %1,   .    .     8    (    !@         %    \"     $    !     0         )    \"        "
+    " ; TM1 #@   #@    &    \"     8         !0    @    !     0    $         \"0    @        &@-+40 X    X    !@    @  "
+    "  &          4    (     0    $    !          D    (            \\#\\.    0     8    (    !@         %    \"     $ "
+    "   \"     0         )    $            #[         )$ .    ,     8    (    !          %    \"     $    \"     0     "
+    "    0  ( 5$P   X    X    !@    @    &          4    (     0    $    !          D    (        !L#3U$ .    .     8  "
+    "  (    !@         %    \"     $    !     0         )    \"         : T]1 #@   &@\"   &    \"     (         !0    @"
+    "    !     0    $         !0 $  X    !    8@   &1I<W!4:6UE        9&ES<$UO9&4       !M:6Y4:6UE         &UA>%1I;64  "
+    "       869T97)&:6YA;%-T<@!S86UP;&54:6UE     'IE<F]#<F]S<P              #@   $     &    \"     8         !0    @   "
+    " !     @    $         \"0   !                      B.- #@   #@    &    \"     8         !0    @    !     0    $   "
+    "      \"0    @           #P/PX    X    !@    @    &          4    (     0    $    !          D    (               "
+    ".    .     8    (    !@         %    \"     $    !     0         )    \"           B.- #@   $     &    \"     0   "
+    "      !0    @    !    \"P    $         $     L   !%>'1R87!O;&%T90      #@   #@    &    \"     8         !0    @   "
+    " !     0    $         \"0    @               X    P    !@    @    $          4    (     0    (    !         !   @!"
+    "O;@  #@   * \"   &    \"     (         !0    @    !     @    $         !0 $  X    !    .    &%C=&EV941I<W!)9'@ =&E"
+    "M95)A;F=E      !N86UE             &1I<W!L87E286YG90  #@   $     &    \"     8         !0    @    !     @    $     "
+    "    \"0   !              0        / _#@   $     &    \"     8         !0    @    !     @    $         \"0   !     "
+    "                 B.- #@   #@    &    \"     0         !0    @    !    !0    $         $     4   !0=6QS90    X   ! "
+    "    !@    @    &          4    (     0    (    !          D    0                     (CC0 X   !     !@    @    &  "
+    "        4    (     0    (    !          D    0             $        #P/PX   !     !@    @    &          4    (    "
+    " 0    (    !          D    0                     (CC0 X    X    !@    @    $          4    (     0    @    !      "
+    "   !     (    0V]N<W1A;G0.    0     8    (    !@         %    \"     $    \"     0         )    $                 "
+    "    \"(XT .    .     8    (    !@         %    \"     $    !     0         )    \"            / _#@   #@    &    \""
+    "     8         !0    @    !     0    $         \"0    @               X   \"     !@    @    1          $          "
+    "0 $ $U#3U,!    \"    %-I9U-U:71E#@   $@    &    \"     T         !0    @    &     0    $         !@   !@       #= "
+    "@    $    !     0    ,    .    V!0   8    (    \"0         %    \"     $   \"H%    0         \"    J!0    !24T    "
+    " #@    @4   &    \"     (         !0    @    !     0    $         !0 $  4    !    !0   $U#3U,     #@   , 3   &    "
+    "\"    !$          0         !  0 34-/4P$    -    1FEL95=R87!P97)?7P    X   \" $P  !@    @    !          4    (    "
+    "%P    $    !          X    X P  !@    @    )          4    (    \" ,   $    !          (    ( P   @    T   \"P    "
+    "\\    /    \"P 0  R (   @#             $YA;64 1W)O=7!S %-I9VYA;', 6$1A=&$ 641A=&$ 4VEG4W5I=&53:6=N86P 57-E<D1A=&$ "
+    "5&EM95)A;F=E %-I9U-U:71E1W)O=7  06-T:79E4VEG;F%L %)E<75I<F5M96YT26YF;P!3:6=3=6ET90!!8W1I=F5'<F]U<                 "
+    "                    8                    )                    #                                                P  "
+    "                  $    '     @                    (    #     0                    ,    !     0                    "
+    "0    \"     @                    4    &     0                    8    $     0                    <    %           "
+    "    \"     0    $          @    $    3          ,    !     0    $    #     0    @    (     0    D    #     0    $ "
+    "   \"    !     $    #    !0    $    $     P    $    !    !0    0    !    !@    4    !    !P    ,    !     0    H  "
+    "  #     0   !$    (     0   !(    #     0    $    +    !     $    ,    !0    $    -     P    $    !    #@    0    "
+    "!    #P    4    !    $                                                                                          . "
+    "         X   !     !@    @    $          4    (     0    X    !         !     .    4VEG;F%L($)U:6QD97(   X    X   "
+    " !@    @    $          4    (     0    4    !         !     %    4'5L<V4    .    .     8    (    !          %    \""
+    "     $    '     0         0    !P   $-U<G)E;G0 #@   * !   &    \"     8         !0    @    !    +@    $         \""
+    "0   ' !                    P')       # <D       +\"=0       L)U        @K$       \"\"L0       \\*Y       #PKD     "
+    "  \"\"\\0       (+Q       \"(O4       (B]0       &,5        8Q4       ,S%0       S,5        @S$       \"#,0       "
+    "U,Q       #4S$       )310       E-%       #NT4       .[10       &-5        8U4       '+50       <M5       \"<V$   "
+    "    )S80       ]MA       #VV$       \"#<0       (-Q       !ZW$       'K<0       I-]       \"DWT       /[?0       _"
+    "M]       \"4X4       )3A0       P>%       #!X4       (CC0 X   \"@ 0  !@    @    &          4    (     0   \"X    !"
+    "          D   !P 0                               !Q         '$                            \"@.\\       * [P       "
+    "                     * [P       H#O                             H#O       \"@.\\                            \"@.\\"
+    "       * [P                            * [P       H#O                             H#O       \"@.\\                "
+    "            \"@.\\       * [P                            * [P       H#O                             H#O       \"@."
+    "\\                            \"@.\\       * [P                      .    0     8    (    !          %    \"     $"
+    "    ,     0         0    #    $%M8FEE;G0@5&5M<      .    \\     8    (    !@         %    \"     $    8     0     "
+    "    )    P                     # <D       &B@0       (*Q       #PKD       \"\"\\0       B+U        8Q4       ,S%0 "
+    "      (,Q       #4S$       )310       [M%        8U4       '+50       G-A       #VV$       \"#<0       >MQ       \""
+    "DWT       /[?0       E.%       #!X4       (CC0 X   #P    !@    @    &          4    (     0   !@    !          D  "
+    " #             -$         T0        #1         -$         T0        #1         -$         T0        #1         -$ "
+    "        T0        #1         -$         T0        #1         -$         T0        #1         -$         T0        "
+    "#1         -$         T0        #1 #@   %     &    \"     T         !0    @    '     0    $         !@   !P       "
+    "#= @    $    \"     P    0    !          X   !     !@    @    &          4    (     0    (    !          D    0   "
+    "                  (CC0 X    X    !@    @    $          4    (     0    @    !         !     (    0V]N<W1A;G0.    ."
+    "     8    (    !          %    \"     $    '     0         0    !P   $-U<G)E;G0 #@   (     &    \"     8         !"
+    "0    @    !    \"@    $         \"0   %                      @'9       \" =D       ,;!0       QL%        ,QT      "
+    "  S'0       BMM       \"!X$       (CC0 X   \"     !@    @    &          4    (     0    H    !          D   !0    "
+    "                             !3         %,                              %$         40                      .    0 "
+    "    8    (    !          %    \"     $    ,     0         0    #    $%M8FEE;G0@5&5M<      .    @     8    (    !@ "
+    "        %    \"     $    *     0         )    4                     \" =D       (!V0       QL%       #&P4        S"
+    "'0       #,=       \"*VT       ('@0       B.- #@   (     &    \"     8         !0    @    !    \"@    $         \""
+    "0   %             T0->C<#T*%S1 UZ-P/0H7-$!F9F9F9D8V0&9F9F9F1C9 ,S,S,S/S-D S,S,S,_,V0,W,S,S,##M ,S,S,S-S/$         "
+    "^0 X   !0    !@    @    -          4    (    !P    $    !          8    <        W0(    !     @    8    '     0   "
+    "      .    0     8    (    !@         %    \"     $    \"     0         )    $                     \"(XT .    4   "
+    "  8    (    #0         %    \"     <    !     0         &    '        -T\"     0    (    \"    !0    (         #@ "
+    "  #@%   &    \"     $         !0    @    $     0    $         #@   #@    &    \"     (         !0    @    !       "
+    "   $         !0 $  $    !          X   !  0  !@    @    \"          4    (     0    $    !          4 !  )     0  "
+    " \"0   !.86UE      !81&%T80    !91&%T80    !5<V5R1&%T80      #@   #     &    \"     0         !0    @             "
+    "  $         $          .    ,     8    (    !@         %    \"                0         )          X    P    !@   "
+    " @    &          4    (               !          D         #@   #     &    \"     8         !0    @               "
+    "$         \"0         .    $ (   8    (     @         %    \"     $    !     0         %  0 $     $   !@    3F%M90"
+    "               %-I9VYA;',           !!8W1I=F53:6=N86P     4F5Q=6ER96UE;G1);F9O %5S97)$871A          !4:6UE4F%N9V4 "
+    "        #@   #     &    \"     0         !0    @               $         $          .    2     8    (    #0       "
+    "  %    \"     4    !     0         &    %        -T\"               !          X    P    !@    @    &          4  "
+    "  (               !          D         #@   #     &    \"     0         !0    @               $         $         "
+    " .    ,     8    (    !@         %    \"                0         )          X   !     !@    @    &          4    "
+    "(     0    (    !          D    0                       D0 X   !H 0  !@    @    \"          4    (     0    $    !"
+    "          4 !  ,     0   #    !.86UE          !'<F]U<',       !!8W1I=F5'<F]U< !5<V5R1&%T80     .    ,     8    (  "
+    "  !          %    \"                0         0          X   !(    !@    @    -          4    (    !0    $    !   "
+    "       8    4        W0(               (         #@   #@    &    \"     8         !0    @    !     0    $         "
+    "\"0    @           #P/PX    P    !@    @    &          4    (               !          D         #@   (@    &    \""
+    "     D         !0    @    !    6     $          @   %@      4E-      X   !(    !@    @    \"          4    (     0"
+    "    $    !          4 !  %     0    4   !-0T]3      X         "
+  }
+}

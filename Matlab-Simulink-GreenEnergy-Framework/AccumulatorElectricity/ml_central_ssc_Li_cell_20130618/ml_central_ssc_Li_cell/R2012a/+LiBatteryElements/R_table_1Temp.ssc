@@ -1,0 +1,40 @@
+component R_table_1Temp < foundation.electrical.branch
+    % R_table_1Temp
+    % This block implements a variable resistance R that depends on a
+    % lookup table.
+    
+    % Copyright 2012 The MathWorks, Inc.
+    
+    inputs
+        SOC = {1,'1'}; %SOC:left
+    end
+    
+    parameters (Size=variable)
+        R_Table = {1e-3*ones(5,1),'Ohm'}; % Resistance Table vs SOC, Temp (Mx1 array)
+        SOC_Table = {[0;0.1;0.5;0.9;1],'1'} % SOC Breakpoints (Mx1 array)
+    end
+    
+    function setup
+    
+    % Check parameter values
+    if any(value(R_Table,'Ohm')<=0)
+        pm_error('simscape:GreaterThanZero','Resistance Table vs SOC, Temp (MxN array)');
+    end
+    if any(value(SOC_Table,'1')<0)
+        pm_error('simscape:GreaterThanOrEqualToZero','SOC Breakpoints (Mx1 array)');
+    end
+    
+    end
+    
+    equations
+        let
+            % Perform the table lookup
+            R = tablelookup(SOC_Table,R_Table,SOC,...
+                interpolation=linear,extrapolation=nearest)
+        in
+            % Electrical Equations
+            v == i*R;
+        end
+    end
+    
+end

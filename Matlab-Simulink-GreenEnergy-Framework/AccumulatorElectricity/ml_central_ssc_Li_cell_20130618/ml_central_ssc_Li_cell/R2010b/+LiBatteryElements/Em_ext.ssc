@@ -1,0 +1,53 @@
+component Em_ext < foundation.electrical.branch
+    % Em_ext
+    % This block implements the main branch voltage source and state of 
+    % charge (SOC).
+    
+    % Copyright 2012 The MathWorks, Inc.
+    
+    inputs
+        V_in = {4.1, 'V'};    % V:right
+        C    = {7.2, 'A*hr'}; % C:right
+    end
+    
+    outputs
+        SOC = {1, '1'}; % SOC:left
+    end
+    
+    parameters
+        Qinit   = {0, 'A*hr'}; % Initial charge deficit
+    end
+    
+    variables
+        Qe      = { 0, 'A*hr'}; % Charge deficit
+    end
+    
+    function setup
+    
+    % Check parameter values
+    if Qinit<0
+        pm_error('simscape:LessThanOrEqualToZero','Initial charge deficit');
+    end
+    Qe = Qinit;
+    
+    % Set initial charge deficit
+    end
+    
+    equations
+        
+        % Charge deficit calculation
+        % Prevent SOC>1
+        if Qe<0 && i>0
+            Qe.der == 0;
+        else
+            Qe.der == -i;
+        end
+        
+        % SOC Equation
+        SOC == 1 - Qe/C;
+        
+        % Electrical equation
+        v == V_in;
+    end
+    
+end
