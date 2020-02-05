@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      9275,        261]
-NotebookOptionsPosition[      8918,        244]
-NotebookOutlinePosition[      9262,        259]
-CellTagsIndexPosition[      9219,        256]
+NotebookDataLength[     10049,        270]
+NotebookOptionsPosition[      9529,        253]
+NotebookOutlinePosition[      9871,        268]
+CellTagsIndexPosition[      9828,        265]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -84,9 +84,9 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{"Export", "[", 
    RowBox[{
-   "\"\<C:\\\\Users\\\\Oleg\\\\Drive\\\\Documents_Files\\\\Projects\\\\\
-WeatherData_Climatology\\\\Pol_Zamosc.125950_IMGW\\\\Solar_Movement.mat\>\"", 
-    ",", 
+    RowBox[{
+     RowBox[{"NotebookDirectory", "[", "]"}], "<>", 
+     "\"\<Pol_Zamosc.125950_IMGW\\\\Solar_Movement.mat\>\""}], ",", 
     RowBox[{"Transpose", "@", 
      RowBox[{"Table", "[", 
       RowBox[{
@@ -101,7 +101,8 @@ WeatherData_Climatology\\\\Pol_Zamosc.125950_IMGW\\\\Solar_Movement.mat\>\"",
         "}"}]}], "]"}]}]}], "]"}], ";"}]}], "Input",
  CellChangeTimes->{{3.6402021183359747`*^9, 3.640202244368406*^9}, {
   3.6402026561238256`*^9, 3.6402026575672045`*^9}, {3.640207273633624*^9, 
-  3.640207280714387*^9}}],
+  3.640207280714387*^9}, {3.7865390020080605`*^9, 3.7865390080792446`*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"2a63d8b6-d085-4b69-b5e2-4f283818f331"],
 
 Cell[CellGroupData[{
 
@@ -110,26 +111,27 @@ Cell[BoxData[
   RowBox[{
    RowBox[{"Graphics3D", "[", 
     RowBox[{
-     RowBox[{"{", 
+     RowBox[{"{", "\[IndentingNewLine]", 
       RowBox[{
-       RowBox[{"Arrowheads", "[", "0.1", "]"}], ",", "White", ",", 
-       "\[IndentingNewLine]", 
+       RowBox[{"Arrowheads", "[", "0.1", "]"}], ",", "\[IndentingNewLine]", 
+       "White", ",", "\[IndentingNewLine]", 
        RowBox[{"Arrow", "[", "\[IndentingNewLine]", 
-        RowBox[{"Tube", "[", "\[IndentingNewLine]", 
+        RowBox[{"Tube", "[", 
          RowBox[{
-          RowBox[{"{", 
+          RowBox[{"{", "\[IndentingNewLine]", 
            RowBox[{
             RowBox[{"{", 
              RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+            "\[IndentingNewLine]", 
             RowBox[{"R", "[", 
              RowBox[{"t", ",", 
-              RowBox[{"50.47", " ", "Degree"}]}], "]"}]}], "}"}], ",", 
-          "0.01"}], "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", 
-        "]"}], ",", 
-       RowBox[{"Arrow", "[", "\[IndentingNewLine]", 
-        RowBox[{"Tube", "[", "\[IndentingNewLine]", 
+              RowBox[{"50.47", " ", "Degree"}]}], "]"}]}], 
+           "\[IndentingNewLine]", "}"}], ",", "0.01"}], "]"}], 
+        "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"Arrow", "[", 
+        RowBox[{"Tube", "[", 
          RowBox[{
-          RowBox[{"{", 
+          RowBox[{"{", "\[IndentingNewLine]", 
            RowBox[{
             RowBox[{"{", 
              RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
@@ -141,13 +143,13 @@ Cell[BoxData[
               RowBox[{
                SuperscriptBox["5.4", "2"], "+", 
                SuperscriptBox["33.17", "2"], "+", 
-               SuperscriptBox["42.8", "2"]}]]}]}], "}"}], ",", "0.01"}], 
-         "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", "]"}], ",", 
-       "\[IndentingNewLine]", "Brown", ",", 
-       RowBox[{"Opacity", "[", "0.8", "]"}], ",", 
-       RowBox[{"Polygon", "[", "\[IndentingNewLine]", 
+               SuperscriptBox["42.8", "2"]}]]}]}], "\[IndentingNewLine]", 
+           "}"}], ",", "0.01"}], "]"}], "]"}], ",", "\[IndentingNewLine]", 
+       "Brown", ",", "\[IndentingNewLine]", 
+       RowBox[{"Opacity", "[", "0.8", "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"Polygon", "[", 
         RowBox[{
-         RowBox[{"{", 
+         RowBox[{"{", "\[IndentingNewLine]", 
           RowBox[{
            RowBox[{"{", 
             RowBox[{"1", ",", "1", ",", "0"}], "}"}], ",", 
@@ -160,12 +162,14 @@ Cell[BoxData[
              RowBox[{"-", "1"}], ",", "0"}], "}"}], ",", 
            RowBox[{"{", 
             RowBox[{
-             RowBox[{"-", "1"}], ",", "1", ",", "0"}], "}"}]}], "}"}], ",", 
+             RowBox[{"-", "1"}], ",", "1", ",", "0"}], "}"}]}], 
+          "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
          RowBox[{"VertexColors", "\[Rule]", 
           RowBox[{"{", 
            RowBox[{
            "Yellow", ",", " ", "Blue", ",", " ", "Green", ",", "Red"}], 
-           "}"}]}]}], "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+           "}"}]}]}], "\[IndentingNewLine]", "]"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
      RowBox[{"PlotRange", "\[Rule]", 
       RowBox[{"{", 
        RowBox[{
@@ -178,36 +182,40 @@ Cell[BoxData[
         RowBox[{"{", 
          RowBox[{
           RowBox[{"-", "0.1"}], ",", "1"}], "}"}]}], "}"}]}], ",", 
-     RowBox[{"Axes", "\[Rule]", "True"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Axes", "\[Rule]", "True"}], ",", "\[IndentingNewLine]", 
      RowBox[{"AxesLabel", "\[Rule]", 
       RowBox[{"{", 
        RowBox[{"\"\<X\>\"", ",", "\"\<Y\>\"", ",", "\"\<Z\>\""}], "}"}]}], 
-     ",", 
+     ",", "\[IndentingNewLine]", 
      RowBox[{"ViewPoint", "->", 
       RowBox[{"{", 
        RowBox[{"2", ",", " ", 
-        RowBox[{"2", "/", "3"}], ",", " ", "0.7"}], "}"}]}]}], "]"}], ",", 
-   "\[IndentingNewLine]", 
+        RowBox[{"2", "/", "3"}], ",", " ", "0.7"}], "}"}]}]}], 
+    "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
    RowBox[{"{", 
     RowBox[{"t", ",", "0", ",", 
      RowBox[{
       RowBox[{"3600", " ", "24", " ", "365"}], "-", "1"}], ",", "0.1"}], 
-    "}"}]}], "\[IndentingNewLine]", "]"}]], "Input"],
+    "}"}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.786539078671582*^9, 
+  3.786539179557291*^9}},ExpressionUUID->"5ead6608-e95b-4eb2-a11e-\
+14e9018d291f"],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`t$$ = 0., Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`t$$ = 0, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`t$$], 0, 31535999, 0.1}}, Typeset`size$$ = {
-    360., {139., 143.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`t$1736$$ = 0}, 
+    360., {138., 144.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`t$3317$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`t$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`t$$, $CellContext`t$1736$$, 0]}, 
+        Hold[$CellContext`t$$, $CellContext`t$3317$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -219,8 +227,8 @@ Cell[BoxData[
             $CellContext`R[$CellContext`t$$, 50.47 Degree]}, 0.01]], 
          Arrow[
           
-          Tube[{{0, 0, 0}, {-5.4, 33.17, 42.8}/(5.4^2 + 33.17^2 + 42.8^2)^
-            Rational[1, 2]}, 0.01]], Brown, 
+          Tube[{{0, 0, 0}, {-5.4, 33.17, 42.8}/Sqrt[
+            5.4^2 + 33.17^2 + 42.8^2]}, 0.01]], Brown, 
          Opacity[0.8], 
          Polygon[{{1, 1, 0}, {1, -1, 0}, {-1, -1, 0}, {-1, 1, 0}}, 
           VertexColors -> {Yellow, Blue, Green, Red}]}, 
@@ -228,7 +236,7 @@ Cell[BoxData[
         AxesLabel -> {"X", "Y", "Z"}, ViewPoint -> {2, 2/3, 0.7}], 
       "Specifications" :> {{$CellContext`t$$, 0, 31535999, 0.1}}, 
       "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{411., {184., 191.}},
+     ImageSizeCache->{411., {185., 191.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -239,12 +247,13 @@ Cell[BoxData[
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{3.640202302224675*^9}]
+ CellChangeTimes->{3.640202302224675*^9, 3.7865390757336397`*^9},
+ CellLabel->"Out[10]=",ExpressionUUID->"edf63d98-03e2-4e67-876b-a6b92e9d18d1"]
 }, Open  ]]
 },
-WindowSize->{1920, 997},
-WindowMargins->{{-8, Automatic}, {Automatic, -8}},
-FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
+WindowSize->{1484, 941},
+WindowMargins->{{-8, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -258,13 +267,12 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 2893, 83, 88, "Input"],
+Cell[558, 20, 2994, 84, 86, "Input",ExpressionUUID->"2a63d8b6-d085-4b69-b5e2-4f283818f331"],
 Cell[CellGroupData[{
-Cell[3476, 107, 3284, 87, 420, "Input"],
-Cell[6763, 196, 2139, 45, 392, "Output"]
+Cell[3577, 108, 3703, 94, 612, "Input",ExpressionUUID->"5ead6608-e95b-4eb2-a11e-14e9018d291f"],
+Cell[7283, 204, 2230, 46, 395, "Output",ExpressionUUID->"edf63d98-03e2-4e67-876b-a6b92e9d18d1"]
 }, Open  ]]
 }
 ]
 *)
 
-(* End of internal cache information *)
