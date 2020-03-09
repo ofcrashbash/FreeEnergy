@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     40789,        860]
-NotebookOptionsPosition[     40233,        842]
-NotebookOutlinePosition[     40576,        857]
-CellTagsIndexPosition[     40533,        854]
+NotebookDataLength[     40780,        858]
+NotebookOptionsPosition[     40224,        840]
+NotebookOutlinePosition[     40567,        855]
+CellTagsIndexPosition[     40524,        852]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -530,9 +530,8 @@ Cell[BoxData[
    3.641984433728479*^9, 3.641984436462864*^9}, {3.6419896682158036`*^9, 
    3.6419896767307243`*^9}, {3.6419922832866507`*^9, 3.641992285228484*^9}, {
    3.79276153376597*^9, 3.7927615416916647`*^9}, {3.7927616698135805`*^9, 
-   3.7927617803844547`*^9}, {3.792761889451821*^9, 
-   3.7927622506128263`*^9}},ExpressionUUID->"61936018-c444-4484-850b-\
-7ee04129b240"],
+   3.7927617803844547`*^9}, {3.792761889451821*^9, 3.7927622506128263`*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"61936018-c444-4484-850b-7ee04129b240"],
 
 Cell[CellGroupData[{
 
@@ -712,7 +711,7 @@ Cell[BoxData[
    3.641982883935497*^9, 3.641982936715508*^9}, {3.792761430390377*^9, 
    3.7927615053711786`*^9}, {3.7927618588458605`*^9, 3.792761872151303*^9}, {
    3.792762273108728*^9, 3.792762300311573*^9}},
- CellLabel->"In[8]:=",ExpressionUUID->"1062efef-6826-466b-b694-581fb3d700f7"],
+ CellLabel->"In[3]:=",ExpressionUUID->"1062efef-6826-466b-b694-581fb3d700f7"],
 
 Cell[BoxData[
  TagBox[
@@ -721,13 +720,12 @@ Cell[BoxData[
     1., $CellContext`floorthick$$ = 0.25, $CellContext`frontglass$$ = 
     1., $CellContext`glassthick$$ = 0.05, $CellContext`heigh$$ = 
     3., $CellContext`isBack$$ = 1., $CellContext`isRoof$$ = 
-    1., $CellContext`lenght$$ = 17.2, $CellContext`offset$$ = 
+    1., $CellContext`lenght$$ = 10., $CellContext`offset$$ = 
     2., $CellContext`roofthick$$ = 0.25, $CellContext`wall$$ = 
-    1.6500000000000001`, $CellContext`wallthick$$ = 
-    0.25, $CellContext`width$$ = 8.5, Typeset`show$$ = True, 
-    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
-    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
-    "\"untitled\"", Typeset`specs$$ = {{{
+    1., $CellContext`wallthick$$ = 0.25, $CellContext`width$$ = 5., 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
        Hold[$CellContext`lenght$$], 10.}, 0, 30}, {{
        Hold[$CellContext`width$$], 5.}, 0, 20}, {{
        Hold[$CellContext`offset$$], 2.}, 0, 
@@ -748,14 +746,14 @@ Cell[BoxData[
       Rational[1, 2]}, {{
        Hold[$CellContext`isRoof$$], 1.}, {0, 1}}, {{
        Hold[$CellContext`isBack$$], 1.}, {0, 1}}}, Typeset`size$$ = {
-    862., {222., 228.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`lenght$16686$$ = 
-    0, $CellContext`width$16687$$ = 0, $CellContext`offset$16688$$ = 
-    0, $CellContext`wall$16689$$ = 0, $CellContext`deep$16690$$ = 
-    0, $CellContext`heigh$16691$$ = 0, $CellContext`frontglass$16692$$ = 
-    0, $CellContext`backglass$16693$$ = 0, $CellContext`wallthick$16694$$ = 
-    0, $CellContext`glassthick$16695$$ = 0, $CellContext`isRoof$16696$$ = 
-    False, $CellContext`isBack$16697$$ = False}, 
+    848., {240., 246.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`lenght$2654$$ = 
+    0, $CellContext`width$2655$$ = 0, $CellContext`offset$2656$$ = 
+    0, $CellContext`wall$2657$$ = 0, $CellContext`deep$2658$$ = 
+    0, $CellContext`heigh$2659$$ = 0, $CellContext`frontglass$2660$$ = 
+    0, $CellContext`backglass$2661$$ = 0, $CellContext`wallthick$2662$$ = 
+    0, $CellContext`glassthick$2663$$ = 0, $CellContext`isRoof$2664$$ = 
+    False, $CellContext`isBack$2665$$ = False}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`backglass$$ = 1., $CellContext`deep$$ = 
@@ -766,18 +764,18 @@ Cell[BoxData[
         2., $CellContext`roofthick$$ = 0.25, $CellContext`wall$$ = 
         1., $CellContext`wallthick$$ = 0.25, $CellContext`width$$ = 5.}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`lenght$$, $CellContext`lenght$16686$$, 0], 
-        Hold[$CellContext`width$$, $CellContext`width$16687$$, 0], 
-        Hold[$CellContext`offset$$, $CellContext`offset$16688$$, 0], 
-        Hold[$CellContext`wall$$, $CellContext`wall$16689$$, 0], 
-        Hold[$CellContext`deep$$, $CellContext`deep$16690$$, 0], 
-        Hold[$CellContext`heigh$$, $CellContext`heigh$16691$$, 0], 
-        Hold[$CellContext`frontglass$$, $CellContext`frontglass$16692$$, 0], 
-        Hold[$CellContext`backglass$$, $CellContext`backglass$16693$$, 0], 
-        Hold[$CellContext`wallthick$$, $CellContext`wallthick$16694$$, 0], 
-        Hold[$CellContext`glassthick$$, $CellContext`glassthick$16695$$, 0], 
-        Hold[$CellContext`isRoof$$, $CellContext`isRoof$16696$$, False], 
-        Hold[$CellContext`isBack$$, $CellContext`isBack$16697$$, False]}, 
+        Hold[$CellContext`lenght$$, $CellContext`lenght$2654$$, 0], 
+        Hold[$CellContext`width$$, $CellContext`width$2655$$, 0], 
+        Hold[$CellContext`offset$$, $CellContext`offset$2656$$, 0], 
+        Hold[$CellContext`wall$$, $CellContext`wall$2657$$, 0], 
+        Hold[$CellContext`deep$$, $CellContext`deep$2658$$, 0], 
+        Hold[$CellContext`heigh$$, $CellContext`heigh$2659$$, 0], 
+        Hold[$CellContext`frontglass$$, $CellContext`frontglass$2660$$, 0], 
+        Hold[$CellContext`backglass$$, $CellContext`backglass$2661$$, 0], 
+        Hold[$CellContext`wallthick$$, $CellContext`wallthick$2662$$, 0], 
+        Hold[$CellContext`glassthick$$, $CellContext`glassthick$2663$$, 0], 
+        Hold[$CellContext`isRoof$$, $CellContext`isRoof$2664$$, False], 
+        Hold[$CellContext`isBack$$, $CellContext`isBack$2665$$, False]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -823,7 +821,7 @@ $CellContext`backglass$$, $CellContext`isRoof$$, $CellContext`isBack$$]]}],
          Rational[1, 2]}, {{$CellContext`isRoof$$, 1.}, {0, 
          1}}, {{$CellContext`isBack$$, 1.}, {0, 1}}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{1187., {254., 260.}},
+     ImageSizeCache->{1173., {272., 278.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -836,8 +834,8 @@ $CellContext`backglass$$, $CellContext`isRoof$$, $CellContext`isBack$$]]}],
   Manipulate`InterpretManipulate[1]]], "Output",
  CellChangeTimes->{{3.641992342493108*^9, 3.6419923698612165`*^9}, 
    3.7927615707204046`*^9, {3.7927616356938477`*^9, 3.792761647843935*^9}, 
-   3.792762300960789*^9},
- CellLabel->"Out[8]=",ExpressionUUID->"7029d518-4716-4d17-87ac-1688ee04bdce"]
+   3.792762300960789*^9, 3.792768546278695*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"b76ed883-486b-4cf9-a26d-ecf826e3fc41"]
 }, Open  ]]
 },
 WindowSize->{1500, 927},
@@ -856,11 +854,11 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 24778, 514, 2213, "Input",ExpressionUUID->"61936018-c444-4484-850b-7ee04129b240",
+Cell[558, 20, 24795, 513, 2213, "Input",ExpressionUUID->"61936018-c444-4484-850b-7ee04129b240",
  InitializationCell->True],
 Cell[CellGroupData[{
-Cell[25361, 538, 8052, 176, 713, "Input",ExpressionUUID->"1062efef-6826-466b-b694-581fb3d700f7"],
-Cell[33416, 716, 6801, 123, 533, "Output",ExpressionUUID->"7029d518-4716-4d17-87ac-1688ee04bdce"]
+Cell[25378, 537, 8052, 176, 713, "Input",ExpressionUUID->"1062efef-6826-466b-b694-581fb3d700f7"],
+Cell[33433, 715, 6775, 122, 626, "Output",ExpressionUUID->"b76ed883-486b-4cf9-a26d-ecf826e3fc41"]
 }, Open  ]]
 }
 ]
