@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     38388,        837]
-NotebookOptionsPosition[     38023,        820]
-NotebookOutlinePosition[     38367,        835]
-CellTagsIndexPosition[     38324,        832]
+NotebookDataLength[     40789,        860]
+NotebookOptionsPosition[     40233,        842]
+NotebookOutlinePosition[     40576,        857]
+CellTagsIndexPosition[     40533,        854]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -27,7 +27,7 @@ Cell[BoxData[
     "wallthick0_", ",", "glassthick0_", ",", "floorthick0_", ",", 
     "roofthick0_", ",", "isRoof0_", ",", "isBack0_"}], "]"}], ":=", 
   "\[IndentingNewLine]", " ", 
-  RowBox[{"Module", "[", 
+  RowBox[{"Module", "[", "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"{", "\[IndentingNewLine]", 
      RowBox[{
@@ -52,46 +52,52 @@ Cell[BoxData[
       "\[IndentingNewLine]", 
       RowBox[{"isRoof", " ", "=", " ", "isRoof0"}], ",", 
       "\[IndentingNewLine]", 
-      RowBox[{"isBack", " ", "=", " ", "isBack0"}]}], "}"}], ",", 
-    "\[IndentingNewLine]", 
+      RowBox[{"isBack", " ", "=", " ", "isBack0"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"null", "=", 
+       RowBox[{"{", 
+        RowBox[{"0.", ",", "0.", ",", "0."}], "}"}]}], ",", " ", 
+      "\[IndentingNewLine]", "x", ",", " ", "y", ",", " ", "z", ",", " ", 
+      "\[IndentingNewLine]", "yoffset", ",", " ", "\[IndentingNewLine]", 
+      "zdeep", ",", " ", "zwall", ",", " ", "zfrontglass", ",", " ", 
+      "zbackglass", ",", "\[IndentingNewLine]", "perimeter", ",", " ", 
+      "\[IndentingNewLine]", "diag1", ",", " ", "diag2"}], 
+     "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
     RowBox[{
-     RowBox[{"null", " ", "=", " ", 
-      RowBox[{"{", 
-       RowBox[{"0", ",", "0", ",", "0"}], "}"}]}], ";", "\[IndentingNewLine]", 
      RowBox[{"x", " ", "=", " ", 
       RowBox[{"{", 
-       RowBox[{"lenght", ",", " ", "0", ",", "0"}], "}"}]}], ";", 
+       RowBox[{"lenght", ",", " ", "0.", ",", "0."}], "}"}]}], ";", 
      "\[IndentingNewLine]", 
      RowBox[{"y", " ", "=", " ", 
       RowBox[{"{", 
-       RowBox[{"0", ",", "width", ",", " ", "0"}], " ", "}"}]}], ";", 
+       RowBox[{"0.", ",", "width", ",", " ", "0."}], " ", "}"}]}], ";", 
      "\[IndentingNewLine]", 
      RowBox[{"z", " ", "=", " ", 
       RowBox[{"{", 
-       RowBox[{"0", ",", "0", ",", "heigh"}], "}"}]}], ";", 
+       RowBox[{"0.", ",", "0.", ",", "heigh"}], "}"}]}], ";", 
      "\[IndentingNewLine]", 
      RowBox[{"yoffset", " ", "=", " ", 
       RowBox[{"{", 
-       RowBox[{"0", ",", " ", "offset", ",", "0"}], "}"}]}], ";", 
+       RowBox[{"0.", ",", " ", "offset", ",", "0."}], "}"}]}], ";", 
      "\[IndentingNewLine]", 
      RowBox[{"zdeep", " ", "=", " ", 
       RowBox[{"{", 
-       RowBox[{"0", ",", "0", ",", 
+       RowBox[{"0.", ",", "0.", ",", 
         RowBox[{"-", "deep"}]}], "}"}]}], ";", "\[IndentingNewLine]", 
      RowBox[{"zwall", " ", "=", " ", 
       RowBox[{"{", 
-       RowBox[{"0", ",", "0", ",", " ", "wall"}], "}"}]}], ";", 
+       RowBox[{"0.", ",", "0.", ",", " ", "wall"}], "}"}]}], ";", 
      "\[IndentingNewLine]", 
      RowBox[{"zfrontglass", "=", 
       RowBox[{"{", 
-       RowBox[{"0", ",", "0", ",", "frontglass"}], "}"}]}], ";", 
+       RowBox[{"0.", ",", "0.", ",", "frontglass"}], "}"}]}], ";", 
      "\[IndentingNewLine]", 
      RowBox[{"zbackglass", " ", "=", " ", 
       RowBox[{"{", 
-       RowBox[{"0", ",", "0", ",", "backglass"}], "}"}]}], ";", 
+       RowBox[{"0.", ",", "0.", ",", "backglass"}], "}"}]}], ";", 
      "\[IndentingNewLine]", 
      RowBox[{"perimeter", " ", "=", " ", 
-      RowBox[{"2", 
+      RowBox[{"2.", 
        RowBox[{"(", 
         RowBox[{"width", " ", "+", " ", "lenght"}], ")"}]}]}], ";", 
      "\[IndentingNewLine]", 
@@ -113,12 +119,11 @@ Cell[BoxData[
          RowBox[{"(", 
           RowBox[{"heigh", "-", "backglass"}], ")"}], "2"]}]]}], ";", 
      "\[IndentingNewLine]", "\[IndentingNewLine]", 
-     RowBox[{"{", 
+     RowBox[{"{", "\[IndentingNewLine]", 
       RowBox[{
-       RowBox[{"{", 
-        RowBox[{"Green", ",", 
-         RowBox[{"Opacity", "[", 
-          RowBox[{"1", "/", "6"}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"{", "\[IndentingNewLine]", 
+        RowBox[{"Green", ",", "\[IndentingNewLine]", 
+         RowBox[{"Opacity", "[", "0.2", "]"}], ",", "\[IndentingNewLine]", 
          RowBox[{
           RowBox[{
            RowBox[{"Polygon", "[", "#", "]"}], "&"}], "/@", 
@@ -126,19 +131,19 @@ Cell[BoxData[
            RowBox[{"{", 
             RowBox[{
              RowBox[{"{", 
-              RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+              RowBox[{"0.", ",", "0.", ",", "0."}], "}"}], ",", 
              RowBox[{"{", 
-              RowBox[{"30", ",", "0", ",", "0"}], "}"}], ",", 
+              RowBox[{"30.", ",", "0.", ",", "0."}], "}"}], ",", 
              RowBox[{"{", 
-              RowBox[{"30", ",", "20", ",", "0"}], "}"}], ",", 
+              RowBox[{"30.", ",", "20.", ",", "0."}], "}"}], ",", 
              RowBox[{"{", 
-              RowBox[{"0", ",", "20", ",", "0"}], "}"}]}], "}"}], "}"}]}], 
-         ",", "\[IndentingNewLine]", "Brown", ",", " ", 
-         RowBox[{"Opacity", "[", "1", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"0.", ",", "20.", ",", "0."}], "}"}]}], "}"}], "}"}]}], 
+         ",", "\[IndentingNewLine]", "Brown", ",", " ", "\[IndentingNewLine]", 
+         RowBox[{"Opacity", "[", "1.", "]"}], ",", "\[IndentingNewLine]", 
          RowBox[{
           RowBox[{
            RowBox[{"Polygon", "[", "#", "]"}], "&"}], "/@", 
-          RowBox[{"{", 
+          RowBox[{"{", "\[IndentingNewLine]", 
            RowBox[{
             RowBox[{"{", 
              RowBox[{
@@ -146,17 +151,20 @@ Cell[BoxData[
               RowBox[{"y", "+", "zdeep"}], ",", 
               RowBox[{"x", "+", "y", "+", "zdeep"}], ",", 
               RowBox[{"x", "+", "zdeep"}]}], "}"}], ",", 
+            "\[IndentingNewLine]", 
             RowBox[{"{", 
              RowBox[{"null", ",", "zdeep", ",", 
               RowBox[{"zdeep", "+", "y"}], ",", "y"}], "}"}], ",", 
+            "\[IndentingNewLine]", 
             RowBox[{"{", 
              RowBox[{"x", ",", 
               RowBox[{"zdeep", "+", "x"}], ",", 
               RowBox[{"zdeep", "+", "y", "+", "x"}], ",", 
-              RowBox[{"y", "+", "x"}]}], "}"}], ",", 
+              RowBox[{"y", "+", "x"}]}], "}"}], ",", "\[IndentingNewLine]", 
             RowBox[{"{", 
              RowBox[{"null", ",", " ", "x", ",", " ", 
               RowBox[{"x", "+", "zdeep"}], ",", "zdeep"}], "}"}], ",", 
+            "\[IndentingNewLine]", 
             RowBox[{"{", 
              RowBox[{"y", ",", " ", 
               RowBox[{"x", "+", "y"}], ",", " ", 
@@ -165,61 +173,65 @@ Cell[BoxData[
             "\[IndentingNewLine]", 
             RowBox[{"If", "[", 
              RowBox[{
-              RowBox[{"isRoof", ">", "0"}], ",", 
-              RowBox[{"{", "}"}], ",", 
+              RowBox[{"isRoof", ">", "0."}], ",", "\[IndentingNewLine]", 
+              RowBox[{"{", "}"}], ",", "\[IndentingNewLine]", 
               RowBox[{"{", 
                RowBox[{
                 RowBox[{"zwall", "+", "zbackglass"}], ",", 
                 RowBox[{"yoffset", "+", "z", "+", "zwall"}], ",", 
                 RowBox[{"yoffset", "+", "z", "+", "zwall", "+", "x"}], ",", 
                 RowBox[{"zwall", "+", "zbackglass", "+", "x"}]}], "}"}]}], 
-             "]"}]}], "}"}]}], ",", "\[IndentingNewLine]", "Orange", ",", " ", 
-         RowBox[{"Opacity", "[", "1", "]"}], ",", "\[IndentingNewLine]", 
+             "]"}]}], "\[IndentingNewLine]", "}"}]}], ",", 
+         "\[IndentingNewLine]", "Orange", ",", " ", "\[IndentingNewLine]", 
+         RowBox[{"Opacity", "[", "1.", "]"}], ",", "\[IndentingNewLine]", 
          RowBox[{
           RowBox[{
            RowBox[{"Polygon", "[", "#", "]"}], "&"}], "/@", 
-          RowBox[{"{", 
+          RowBox[{"{", "\[IndentingNewLine]", 
            RowBox[{
             RowBox[{"{", 
              RowBox[{"null", ",", "zwall", ",", 
               RowBox[{"zwall", "+", "y"}], ",", "y"}], "}"}], ",", 
+            "\[IndentingNewLine]", 
             RowBox[{"{", 
              RowBox[{"x", ",", 
               RowBox[{"zwall", "+", "x"}], ",", 
               RowBox[{"zwall", "+", "y", "+", "x"}], ",", 
-              RowBox[{"y", "+", "x"}]}], "}"}], ",", 
+              RowBox[{"y", "+", "x"}]}], "}"}], ",", "\[IndentingNewLine]", 
             RowBox[{"If", "[", 
              RowBox[{
-              RowBox[{"isBack", ">", "0"}], ",", 
+              RowBox[{"isBack", ">", "0"}], ",", "\[IndentingNewLine]", 
               RowBox[{"{", 
                RowBox[{"null", ",", " ", "x", ",", " ", 
                 RowBox[{"x", "+", "zwall"}], ",", "zwall"}], "}"}], ",", 
+              "\[IndentingNewLine]", 
               RowBox[{"{", 
                RowBox[{"null", ",", 
                 RowBox[{"zwall", "+", "zbackglass"}], ",", 
                 RowBox[{"zwall", "+", "zbackglass", "+", "x"}], ",", "x"}], 
-               "}"}]}], "]"}], ",", 
+               "}"}]}], "]"}], ",", "\[IndentingNewLine]", 
             RowBox[{"{", 
              RowBox[{"y", ",", " ", 
               RowBox[{"x", "+", "y"}], ",", " ", 
               RowBox[{"x", "+", "y", "+", "zwall"}], ",", 
-              RowBox[{"y", "+", "zwall"}]}], "}"}]}], "}"}]}], ",", 
-         "\[IndentingNewLine]", "LightBlue", ",", 
-         RowBox[{"Opacity", "[", 
-          RowBox[{"1", "/", "3"}], "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"y", "+", "zwall"}]}], "}"}]}], "\[IndentingNewLine]", 
+           "}"}]}], ",", "\[IndentingNewLine]", "LightBlue", ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"Opacity", "[", "0.33", "]"}], ",", "\[IndentingNewLine]", 
          RowBox[{
           RowBox[{
            RowBox[{"Polygon", "[", "#", "]"}], "&"}], "/@", 
-          RowBox[{"{", 
+          RowBox[{"{", "\[IndentingNewLine]", 
            RowBox[{
             RowBox[{"If", "[", 
              RowBox[{
-              RowBox[{"isBack", ">", "0"}], ",", 
+              RowBox[{"isBack", ">", "0."}], ",", "\[IndentingNewLine]", 
               RowBox[{"{", 
                RowBox[{"zwall", ",", 
                 RowBox[{"zwall", "+", "zbackglass"}], ",", 
                 RowBox[{"zwall", "+", "zbackglass", "+", "x"}], ",", 
                 RowBox[{"x", "+", "zwall"}]}], "}"}], ",", 
+              "\[IndentingNewLine]", 
               RowBox[{"{", "}"}]}], "]"}], ",", "\[IndentingNewLine]", 
             RowBox[{"{", 
              RowBox[{
@@ -234,6 +246,7 @@ Cell[BoxData[
               RowBox[{"yoffset", "+", "z", "+", "zwall"}], ",", 
               RowBox[{"zwall", "+", "zfrontglass", "+", "y"}], ",", 
               RowBox[{"zwall", "+", "y"}]}], "}"}], ",", 
+            "\[IndentingNewLine]", 
             RowBox[{"{", 
              RowBox[{
               RowBox[{"zwall", "+", "x"}], ",", 
@@ -244,13 +257,14 @@ Cell[BoxData[
             "\[IndentingNewLine]", 
             RowBox[{"If", "[", 
              RowBox[{
-              RowBox[{"isRoof", ">", "0"}], ",", 
+              RowBox[{"isRoof", ">", "0."}], ",", "\[IndentingNewLine]", 
               RowBox[{"{", 
                RowBox[{
                 RowBox[{"zwall", "+", "zbackglass"}], ",", 
                 RowBox[{"yoffset", "+", "z", "+", "zwall"}], ",", 
                 RowBox[{"yoffset", "+", "z", "+", "zwall", "+", "x"}], ",", 
                 RowBox[{"zwall", "+", "zbackglass", "+", "x"}]}], "}"}], ",", 
+              "\[IndentingNewLine]", 
               RowBox[{"{", "}"}]}], "]"}], ",", "\[IndentingNewLine]", 
             RowBox[{"{", 
              RowBox[{
@@ -258,10 +272,10 @@ Cell[BoxData[
               RowBox[{"zwall", "+", "zfrontglass", "+", "y"}], ",", 
               RowBox[{"zwall", "+", "zfrontglass", "+", "y", "+", "x"}], ",", 
               RowBox[{"yoffset", "+", "z", "+", "zwall", "+", "x"}]}], "}"}], 
-            ",", 
-            RowBox[{"{", "}"}]}], "}"}]}]}], "}"}], ",", 
-       "\[IndentingNewLine]", 
-       RowBox[{"{", 
+            ",", "\[IndentingNewLine]", 
+            RowBox[{"{", "}"}]}], "\[IndentingNewLine]", "}"}]}]}], 
+        "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"{", "\[IndentingNewLine]", 
         RowBox[{
          RowBox[{"\"\<Geom_Square_Floor\>\"", "->", " ", 
           RowBox[{"{", 
@@ -280,7 +294,7 @@ Cell[BoxData[
              RowBox[{"perimeter", " ", "wall"}], " ", "+", " ", 
              RowBox[{
               RowBox[{"(", 
-               RowBox[{"1", "-", "isBack"}], ")"}], "lenght", " ", 
+               RowBox[{"1.", "-", "isBack"}], ")"}], "lenght", " ", 
               "backglass"}]}], "}"}], "}"}]}], ",", "\[IndentingNewLine]", 
          RowBox[{"\"\<Geom_Square_Wall\>\"", "->", " ", 
           RowBox[{"{", 
@@ -292,7 +306,7 @@ Cell[BoxData[
              "+", 
              RowBox[{
               RowBox[{"(", 
-               RowBox[{"1", "-", "isBack"}], ")"}], "lenght", " ", 
+               RowBox[{"1.", "-", "isBack"}], ")"}], "lenght", " ", 
               "backglass"}]}], "}"}], "}"}]}], ",", "\[IndentingNewLine]", 
          RowBox[{"\"\<Geom_Square_Glass_Sides\>\"", "->", " ", 
           RowBox[{"{", 
@@ -348,8 +362,8 @@ Cell[BoxData[
             RowBox[{
              RowBox[{"diag2", "*", "lenght", " ", 
               RowBox[{"(", 
-               RowBox[{"1", "-", "isRoof"}], ")"}]}], " ", "+", 
-             RowBox[{"1", "/", "100"}]}], "}"}], "}"}]}], ",", 
+               RowBox[{"1.", "-", "isRoof"}], ")"}]}], " ", "+", 
+             RowBox[{"1", "/", "100."}]}], "}"}], "}"}]}], ",", 
          "\[IndentingNewLine]", 
          RowBox[{"\"\<Geom_Volume\>\"", "\[Rule]", 
           RowBox[{"{", 
@@ -368,7 +382,7 @@ Cell[BoxData[
                    RowBox[{"width", "-", "offset"}], ")"}], 
                   RowBox[{"(", 
                    RowBox[{"heigh", " ", "+", " ", "frontglass"}], ")"}]}]}], 
-                "2"], "+", 
+                "2."], "+", 
                RowBox[{
                 RowBox[{"(", 
                  RowBox[{"deep", "+", "wall"}], ")"}], "width"}]}], ")"}], 
@@ -413,12 +427,12 @@ Cell[BoxData[
              RowBox[{"VectorAngle", "[", 
               RowBox[{
                RowBox[{"{", 
-                RowBox[{"0", ",", "0", ",", "1"}], "}"}], ",", 
+                RowBox[{"0.", ",", "0.", ",", "1."}], "}"}], ",", 
                RowBox[{"{", 
-                RowBox[{"0", ",", 
+                RowBox[{"0.", ",", 
                  RowBox[{"heigh", "-", "backglass"}], ",", "offset"}], 
                 "}"}]}], "]"}], " ", 
-             FractionBox["180", "Pi"]}], "}"}], "}"}]}], ",", 
+             FractionBox["180.", "Pi"]}], "}"}], "}"}]}], ",", 
          "\[IndentingNewLine]", 
          RowBox[{"\"\<Geom_Angle_2\>\"", "->", " ", 
           RowBox[{"{", 
@@ -427,12 +441,12 @@ Cell[BoxData[
              RowBox[{"VectorAngle", "[", 
               RowBox[{
                RowBox[{"{", 
-                RowBox[{"0", ",", "0", ",", "1"}], "}"}], ",", 
+                RowBox[{"0.", ",", "0.", ",", "1."}], "}"}], ",", 
                RowBox[{"{", 
-                RowBox[{"0", ",", 
+                RowBox[{"0.", ",", 
                  RowBox[{"heigh", "-", "frontglass"}], ",", 
                  RowBox[{"width", "-", "offset"}]}], "}"}]}], "]"}], " ", 
-             FractionBox["180", "Pi"]}], "}"}], "}"}]}], ",", 
+             FractionBox["180.", "Pi"]}], "}"}], "}"}]}], ",", 
          "\[IndentingNewLine]", 
          RowBox[{"\"\<Geom_WallThick\>\"", "\[Rule]", 
           RowBox[{"{", 
@@ -449,7 +463,9 @@ Cell[BoxData[
          RowBox[{"\"\<Geom_FloorThick\>\"", "\[Rule]", 
           RowBox[{"{", 
            RowBox[{"{", "floorthick", "}"}], "}"}]}]}], "\[IndentingNewLine]",
-         "}"}]}], "}"}]}]}], "\[IndentingNewLine]", "]"}]}]], "Input",
+         "}"}]}], "\[IndentingNewLine]", "}"}]}]}], "\[IndentingNewLine]", 
+   "]"}]}]], "Input",
+ InitializationCell->True,
  CellChangeTimes->{{3.6403528476799593`*^9, 3.640352868337309*^9}, {
    3.640352938902376*^9, 3.6403529959819927`*^9}, {3.640353027479599*^9, 
    3.6403533458808813`*^9}, {3.640353389452741*^9, 3.640353418366005*^9}, {
@@ -512,16 +528,20 @@ Cell[BoxData[
    3.6419825219353247`*^9, 3.641982599519535*^9}, {3.641983136103829*^9, 
    3.6419831571204834`*^9}, {3.641983253597489*^9, 3.641983265071568*^9}, {
    3.641984433728479*^9, 3.641984436462864*^9}, {3.6419896682158036`*^9, 
-   3.6419896767307243`*^9}, {3.6419922832866507`*^9, 3.641992285228484*^9}}],
+   3.6419896767307243`*^9}, {3.6419922832866507`*^9, 3.641992285228484*^9}, {
+   3.79276153376597*^9, 3.7927615416916647`*^9}, {3.7927616698135805`*^9, 
+   3.7927617803844547`*^9}, {3.792761889451821*^9, 
+   3.7927622506128263`*^9}},ExpressionUUID->"61936018-c444-4484-850b-\
+7ee04129b240"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"\[IndentingNewLine]", 
-  RowBox[{"Manipulate", "[", 
+  RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"Row", "@", 
-     RowBox[{"{", 
+     RowBox[{"{", "\[IndentingNewLine]", 
       RowBox[{
        RowBox[{"data", " ", ":=", " ", 
         RowBox[{"greenhousestandart", "[", 
@@ -533,15 +553,15 @@ Cell[BoxData[
        RowBox[{
         RowBox[{
          RowBox[{"Row", "[", 
-          RowBox[{"{", 
+          RowBox[{"{", "\[IndentingNewLine]", 
            RowBox[{
-            RowBox[{"Column", "[", 
+            RowBox[{"Column", "[", "\[IndentingNewLine]", 
              RowBox[{"Append", "[", 
               RowBox[{
                RowBox[{"data", "[", 
-                RowBox[{"[", "2", "]"}], "]"}], ",", 
-               RowBox[{"Button", "[", 
-                RowBox[{"\"\<Export\>\"", ",", 
+                RowBox[{"[", "2", "]"}], "]"}], ",", "\[IndentingNewLine]", 
+               RowBox[{"Button", "[", "\[IndentingNewLine]", 
+                RowBox[{"\"\<Export\>\"", ",", "\[IndentingNewLine]", 
                  RowBox[{"Export", "[", 
                   RowBox[{
                    RowBox[{
@@ -549,13 +569,16 @@ Cell[BoxData[
                     "\"\<geometry.mat\>\""}], ",", 
                    RowBox[{"data", "[", 
                     RowBox[{"[", "2", "]"}], "]"}], ",", 
-                   "\"\<LabeledData\>\""}], "]"}]}], "]"}]}], "]"}], "]"}], 
-            ",", 
-            RowBox[{"Graphics3D", "[", 
+                   "\"\<LabeledData\>\""}], "]"}]}], "\[IndentingNewLine]", 
+                "]"}]}], "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", 
+             "]"}], ",", "\[IndentingNewLine]", 
+            RowBox[{"Graphics3D", "[", "\[IndentingNewLine]", 
              RowBox[{
               RowBox[{"data", "[", 
                RowBox[{"[", "1", "]"}], "]"}], ",", " ", 
+              "\[IndentingNewLine]", 
               RowBox[{"ImageSize", "\[Rule]", "Large"}], ",", 
+              "\[IndentingNewLine]", 
               RowBox[{"PlotRange", "\[Rule]", 
                RowBox[{"{", 
                 RowBox[{
@@ -566,97 +589,97 @@ Cell[BoxData[
                  RowBox[{"{", 
                   RowBox[{
                    RowBox[{"-", "3"}], ",", "8"}], "}"}]}], "}"}]}], ",", 
+              "\[IndentingNewLine]", 
               RowBox[{"Axes", "\[Rule]", "True"}], ",", " ", 
+              "\[IndentingNewLine]", 
               RowBox[{"AxesLabel", "\[Rule]", 
                RowBox[{"{", 
                 RowBox[{"X", ",", "Y", ",", "Z"}], "}"}]}], ",", 
+              "\[IndentingNewLine]", 
               RowBox[{"ViewPoint", "\[Rule]", 
                RowBox[{"{", 
                 RowBox[{
                  RowBox[{"-", "1.3"}], ",", " ", "2.4", ",", " ", "2."}], 
-                "}"}]}]}], "]"}]}], "}"}], "]"}], "\[IndentingNewLine]", 
-         "&"}], "@", 
+                "}"}]}]}], "]"}]}], "\[IndentingNewLine]", "}"}], "]"}], 
+         "\[IndentingNewLine]", "&"}], "@", 
         RowBox[{"greenhousestandart", "[", 
          RowBox[{
          "lenght", ",", "width", ",", "offset", ",", "wall", ",", "deep", ",",
            "heigh", ",", "frontglass", ",", "backglass", ",", "isRoof", ",", 
-          "isBack"}], "]"}]}]}], "}"}]}], ",", "\[IndentingNewLine]", 
-    RowBox[{"{", 
-     RowBox[{
-      RowBox[{"{", 
-       RowBox[{"lenght", ",", "10"}], "}"}], ",", "0", ",", "30"}], "}"}], 
-    ",", "\[IndentingNewLine]", 
-    RowBox[{"{", 
-     RowBox[{
-      RowBox[{"{", 
-       RowBox[{"width", ",", " ", "5"}], "}"}], ",", "0", ",", "20"}], "}"}], 
-    ",", "\[IndentingNewLine]", 
-    RowBox[{"{", 
-     RowBox[{
-      RowBox[{"{", 
-       RowBox[{"offset", ",", "2"}], "}"}], ",", "0", ",", "width"}], "}"}], 
-    ",", "\[IndentingNewLine]", 
-    RowBox[{"{", 
-     RowBox[{
-      RowBox[{"{", 
-       RowBox[{"wall", ",", " ", "1"}], "}"}], ",", "0", ",", "5"}], "}"}], 
-    ",", "\[IndentingNewLine]", 
-    RowBox[{"{", 
-     RowBox[{
-      RowBox[{"{", 
-       RowBox[{"deep", ",", "1"}], "}"}], ",", "0", ",", "3"}], "}"}], ",", 
+          "isBack"}], "]"}]}]}], "\[IndentingNewLine]", "}"}]}], ",", 
     "\[IndentingNewLine]", 
     RowBox[{"{", 
      RowBox[{
       RowBox[{"{", 
-       RowBox[{"heigh", ",", "3"}], "}"}], ",", 
+       RowBox[{"lenght", ",", "10."}], "}"}], ",", "0", ",", "30"}], "}"}], 
+    ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"width", ",", " ", "5."}], "}"}], ",", "0", ",", "20"}], "}"}],
+     ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"offset", ",", "2."}], "}"}], ",", "0", ",", "width"}], "}"}], 
+    ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"wall", ",", " ", "1."}], "}"}], ",", "0", ",", "5"}], "}"}], 
+    ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"deep", ",", "1."}], "}"}], ",", "0", ",", "3"}], "}"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"heigh", ",", "3."}], "}"}], ",", 
       RowBox[{"Min", "[", 
        RowBox[{"frontglass", ",", "backglass"}], "]"}], ",", "5"}], "}"}], 
     ",", "\[IndentingNewLine]", 
     RowBox[{"{", 
      RowBox[{
       RowBox[{"{", 
-       RowBox[{"frontglass", ",", "1"}], "}"}], ",", "0", ",", "3"}], "}"}], 
+       RowBox[{"frontglass", ",", "1."}], "}"}], ",", "0", ",", "3"}], "}"}], 
     ",", "\[IndentingNewLine]", 
     RowBox[{"{", 
      RowBox[{
       RowBox[{"{", 
-       RowBox[{"backglass", ",", "1"}], "}"}], ",", "0", ",", "4"}], "}"}], 
+       RowBox[{"backglass", ",", "1."}], "}"}], ",", "0", ",", "4"}], "}"}], 
     ",", "\[IndentingNewLine]", 
     RowBox[{"{", 
      RowBox[{
       RowBox[{"{", 
-       RowBox[{"wallthick", ",", 
-        RowBox[{"1", "/", "4"}]}], "}"}], ",", "0", ",", 
+       RowBox[{"wallthick", ",", "0.25"}], "}"}], ",", "0", ",", 
       RowBox[{"1", "/", "2"}]}], "}"}], ",", "\[IndentingNewLine]", 
     RowBox[{"{", 
      RowBox[{
       RowBox[{"{", 
-       RowBox[{"glassthick", ",", 
-        RowBox[{"5", "/", "100"}]}], "}"}], ",", "0", ",", 
+       RowBox[{"glassthick", ",", "0.05"}], "}"}], ",", "0", ",", 
       RowBox[{"2", "/", "10"}]}], "}"}], ",", "\[IndentingNewLine]", 
     RowBox[{"{", 
      RowBox[{
       RowBox[{"{", 
-       RowBox[{"floorthick", ",", 
-        RowBox[{"1", "/", "4"}]}], "}"}], ",", "0", ",", "1"}], "}"}], ",", 
-    "\[IndentingNewLine]", 
+       RowBox[{"floorthick", ",", "0.25"}], "}"}], ",", "0", ",", "1"}], 
+     "}"}], ",", "\[IndentingNewLine]", 
     RowBox[{"{", 
      RowBox[{
       RowBox[{"{", 
-       RowBox[{"roofthick", ",", 
-        RowBox[{"1", "/", "4"}]}], "}"}], ",", "0", ",", 
+       RowBox[{"roofthick", ",", "0.25"}], "}"}], ",", "0", ",", 
       RowBox[{"1", "/", "2"}]}], "}"}], ",", "\[IndentingNewLine]", 
     RowBox[{"{", 
      RowBox[{
       RowBox[{"{", 
-       RowBox[{"isRoof", ",", "1"}], "}"}], ",", 
+       RowBox[{"isRoof", ",", "1."}], "}"}], ",", 
       RowBox[{"{", 
        RowBox[{"0", ",", "1"}], "}"}]}], "}"}], ",", "\[IndentingNewLine]", 
     RowBox[{"{", 
      RowBox[{
       RowBox[{"{", 
-       RowBox[{"isBack", ",", "1"}], "}"}], ",", 
+       RowBox[{"isBack", ",", "1."}], "}"}], ",", 
       RowBox[{"{", 
        RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}]}]], "Input",
  CellChangeTimes->{{3.640849853653103*^9, 3.640849881497876*^9}, {
@@ -686,76 +709,75 @@ Cell[BoxData[
    3.6413929777263556`*^9}, {3.6418143477494135`*^9, 
    3.6418143770598235`*^9}, {3.6418145687135572`*^9, 3.641814586767888*^9}, 
    3.6418146864177866`*^9, {3.6419827234529147`*^9, 3.6419828125001564`*^9}, {
-   3.641982883935497*^9, 3.641982936715508*^9}}],
+   3.641982883935497*^9, 3.641982936715508*^9}, {3.792761430390377*^9, 
+   3.7927615053711786`*^9}, {3.7927618588458605`*^9, 3.792761872151303*^9}, {
+   3.792762273108728*^9, 3.792762300311573*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"1062efef-6826-466b-b694-581fb3d700f7"],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`backglass$$ = 1, $CellContext`deep$$ = 
-    1, $CellContext`floorthick$$ = Rational[1, 4], $CellContext`frontglass$$ =
-     1, $CellContext`glassthick$$ = Rational[1, 20], $CellContext`heigh$$ = 
-    3, $CellContext`isBack$$ = 1, $CellContext`isRoof$$ = 
-    1, $CellContext`lenght$$ = 10, $CellContext`offset$$ = 
-    2, $CellContext`roofthick$$ = Rational[1, 4], $CellContext`wall$$ = 
-    1, $CellContext`wallthick$$ = Rational[1, 4], $CellContext`width$$ = 5, 
-    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
-    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
-    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
-       Hold[$CellContext`lenght$$], 10}, 0, 30}, {{
-       Hold[$CellContext`width$$], 5}, 0, 20}, {{
-       Hold[$CellContext`offset$$], 2}, 0, 
+   DynamicModuleBox[{$CellContext`backglass$$ = 1., $CellContext`deep$$ = 
+    1., $CellContext`floorthick$$ = 0.25, $CellContext`frontglass$$ = 
+    1., $CellContext`glassthick$$ = 0.05, $CellContext`heigh$$ = 
+    3., $CellContext`isBack$$ = 1., $CellContext`isRoof$$ = 
+    1., $CellContext`lenght$$ = 17.2, $CellContext`offset$$ = 
+    2., $CellContext`roofthick$$ = 0.25, $CellContext`wall$$ = 
+    1.6500000000000001`, $CellContext`wallthick$$ = 
+    0.25, $CellContext`width$$ = 8.5, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`lenght$$], 10.}, 0, 30}, {{
+       Hold[$CellContext`width$$], 5.}, 0, 20}, {{
+       Hold[$CellContext`offset$$], 2.}, 0, 
       Dynamic[$CellContext`width$$]}, {{
-       Hold[$CellContext`wall$$], 1}, 0, 5}, {{
-       Hold[$CellContext`deep$$], 1}, 0, 3}, {{
-       Hold[$CellContext`heigh$$], 3}, 
+       Hold[$CellContext`wall$$], 1.}, 0, 5}, {{
+       Hold[$CellContext`deep$$], 1.}, 0, 3}, {{
+       Hold[$CellContext`heigh$$], 3.}, 
       Dynamic[
        Min[$CellContext`frontglass$$, $CellContext`backglass$$]], 5}, {{
-       Hold[$CellContext`frontglass$$], 1}, 0, 3}, {{
-       Hold[$CellContext`backglass$$], 1}, 0, 4}, {{
-       Hold[$CellContext`wallthick$$], 
-       Rational[1, 4]}, 0, 
+       Hold[$CellContext`frontglass$$], 1.}, 0, 3}, {{
+       Hold[$CellContext`backglass$$], 1.}, 0, 4}, {{
+       Hold[$CellContext`wallthick$$], 0.25}, 0, 
       Rational[1, 2]}, {{
-       Hold[$CellContext`glassthick$$], 
-       Rational[1, 20]}, 0, 
+       Hold[$CellContext`glassthick$$], 0.05}, 0, 
       Rational[1, 5]}, {{
-       Hold[$CellContext`floorthick$$], 
-       Rational[1, 4]}, 0, 1}, {{
-       Hold[$CellContext`roofthick$$], 
-       Rational[1, 4]}, 0, 
+       Hold[$CellContext`floorthick$$], 0.25}, 0, 1}, {{
+       Hold[$CellContext`roofthick$$], 0.25}, 0, 
       Rational[1, 2]}, {{
-       Hold[$CellContext`isRoof$$], 1}, {0, 1}}, {{
-       Hold[$CellContext`isBack$$], 1}, {0, 1}}}, Typeset`size$$ = {
-    922., {254., 261.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`lenght$1033$$ = 
-    0, $CellContext`width$1034$$ = 0, $CellContext`offset$1035$$ = 
-    0, $CellContext`wall$1036$$ = 0, $CellContext`deep$1037$$ = 
-    0, $CellContext`heigh$1038$$ = 0, $CellContext`frontglass$1039$$ = 
-    0, $CellContext`backglass$1040$$ = 0, $CellContext`wallthick$1041$$ = 
-    0, $CellContext`glassthick$1042$$ = 0, $CellContext`isRoof$1043$$ = 
-    False, $CellContext`isBack$1044$$ = False}, 
+       Hold[$CellContext`isRoof$$], 1.}, {0, 1}}, {{
+       Hold[$CellContext`isBack$$], 1.}, {0, 1}}}, Typeset`size$$ = {
+    862., {222., 228.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`lenght$16686$$ = 
+    0, $CellContext`width$16687$$ = 0, $CellContext`offset$16688$$ = 
+    0, $CellContext`wall$16689$$ = 0, $CellContext`deep$16690$$ = 
+    0, $CellContext`heigh$16691$$ = 0, $CellContext`frontglass$16692$$ = 
+    0, $CellContext`backglass$16693$$ = 0, $CellContext`wallthick$16694$$ = 
+    0, $CellContext`glassthick$16695$$ = 0, $CellContext`isRoof$16696$$ = 
+    False, $CellContext`isBack$16697$$ = False}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
-      "Variables" :> {$CellContext`backglass$$ = 1, $CellContext`deep$$ = 
-        1, $CellContext`floorthick$$ = 
-        Rational[1, 4], $CellContext`frontglass$$ = 
-        1, $CellContext`glassthick$$ = Rational[1, 20], $CellContext`heigh$$ = 
-        3, $CellContext`isBack$$ = 1, $CellContext`isRoof$$ = 
-        1, $CellContext`lenght$$ = 10, $CellContext`offset$$ = 
-        2, $CellContext`roofthick$$ = Rational[1, 4], $CellContext`wall$$ = 
-        1, $CellContext`wallthick$$ = Rational[1, 4], $CellContext`width$$ = 
-        5}, "ControllerVariables" :> {
-        Hold[$CellContext`lenght$$, $CellContext`lenght$1033$$, 0], 
-        Hold[$CellContext`width$$, $CellContext`width$1034$$, 0], 
-        Hold[$CellContext`offset$$, $CellContext`offset$1035$$, 0], 
-        Hold[$CellContext`wall$$, $CellContext`wall$1036$$, 0], 
-        Hold[$CellContext`deep$$, $CellContext`deep$1037$$, 0], 
-        Hold[$CellContext`heigh$$, $CellContext`heigh$1038$$, 0], 
-        Hold[$CellContext`frontglass$$, $CellContext`frontglass$1039$$, 0], 
-        Hold[$CellContext`backglass$$, $CellContext`backglass$1040$$, 0], 
-        Hold[$CellContext`wallthick$$, $CellContext`wallthick$1041$$, 0], 
-        Hold[$CellContext`glassthick$$, $CellContext`glassthick$1042$$, 0], 
-        Hold[$CellContext`isRoof$$, $CellContext`isRoof$1043$$, False], 
-        Hold[$CellContext`isBack$$, $CellContext`isBack$1044$$, False]}, 
+      "Variables" :> {$CellContext`backglass$$ = 1., $CellContext`deep$$ = 
+        1., $CellContext`floorthick$$ = 0.25, $CellContext`frontglass$$ = 
+        1., $CellContext`glassthick$$ = 0.05, $CellContext`heigh$$ = 
+        3., $CellContext`isBack$$ = 1., $CellContext`isRoof$$ = 
+        1., $CellContext`lenght$$ = 10., $CellContext`offset$$ = 
+        2., $CellContext`roofthick$$ = 0.25, $CellContext`wall$$ = 
+        1., $CellContext`wallthick$$ = 0.25, $CellContext`width$$ = 5.}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`lenght$$, $CellContext`lenght$16686$$, 0], 
+        Hold[$CellContext`width$$, $CellContext`width$16687$$, 0], 
+        Hold[$CellContext`offset$$, $CellContext`offset$16688$$, 0], 
+        Hold[$CellContext`wall$$, $CellContext`wall$16689$$, 0], 
+        Hold[$CellContext`deep$$, $CellContext`deep$16690$$, 0], 
+        Hold[$CellContext`heigh$$, $CellContext`heigh$16691$$, 0], 
+        Hold[$CellContext`frontglass$$, $CellContext`frontglass$16692$$, 0], 
+        Hold[$CellContext`backglass$$, $CellContext`backglass$16693$$, 0], 
+        Hold[$CellContext`wallthick$$, $CellContext`wallthick$16694$$, 0], 
+        Hold[$CellContext`glassthick$$, $CellContext`glassthick$16695$$, 0], 
+        Hold[$CellContext`isRoof$$, $CellContext`isRoof$16696$$, False], 
+        Hold[$CellContext`isBack$$, $CellContext`isBack$16697$$, False]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -785,26 +807,23 @@ $CellContext`isBack$$]; (Row[{
 $CellContext`width$$, $CellContext`offset$$, $CellContext`wall$$, \
 $CellContext`deep$$, $CellContext`heigh$$, $CellContext`frontglass$$, \
 $CellContext`backglass$$, $CellContext`isRoof$$, $CellContext`isBack$$]]}], 
-      "Specifications" :> {{{$CellContext`lenght$$, 10}, 0, 
-         30}, {{$CellContext`width$$, 5}, 0, 20}, {{$CellContext`offset$$, 2},
-          0, 
-         Dynamic[$CellContext`width$$]}, {{$CellContext`wall$$, 1}, 0, 
-         5}, {{$CellContext`deep$$, 1}, 0, 3}, {{$CellContext`heigh$$, 3}, 
+      "Specifications" :> {{{$CellContext`lenght$$, 10.}, 0, 
+         30}, {{$CellContext`width$$, 5.}, 0, 
+         20}, {{$CellContext`offset$$, 2.}, 0, 
+         Dynamic[$CellContext`width$$]}, {{$CellContext`wall$$, 1.}, 0, 
+         5}, {{$CellContext`deep$$, 1.}, 0, 3}, {{$CellContext`heigh$$, 3.}, 
          Dynamic[
           Min[$CellContext`frontglass$$, $CellContext`backglass$$]], 
-         5}, {{$CellContext`frontglass$$, 1}, 0, 
-         3}, {{$CellContext`backglass$$, 1}, 0, 
-         4}, {{$CellContext`wallthick$$, 
-          Rational[1, 4]}, 0, 
-         Rational[1, 2]}, {{$CellContext`glassthick$$, 
-          Rational[1, 20]}, 0, 
-         Rational[1, 5]}, {{$CellContext`floorthick$$, 
-          Rational[1, 4]}, 0, 1}, {{$CellContext`roofthick$$, 
-          Rational[1, 4]}, 0, 
-         Rational[1, 2]}, {{$CellContext`isRoof$$, 1}, {0, 
-         1}}, {{$CellContext`isBack$$, 1}, {0, 1}}}, "Options" :> {}, 
+         5}, {{$CellContext`frontglass$$, 1.}, 0, 
+         3}, {{$CellContext`backglass$$, 1.}, 0, 
+         4}, {{$CellContext`wallthick$$, 0.25}, 0, 
+         Rational[1, 2]}, {{$CellContext`glassthick$$, 0.05}, 0, 
+         Rational[1, 5]}, {{$CellContext`floorthick$$, 0.25}, 0, 
+         1}, {{$CellContext`roofthick$$, 0.25}, 0, 
+         Rational[1, 2]}, {{$CellContext`isRoof$$, 1.}, {0, 
+         1}}, {{$CellContext`isBack$$, 1.}, {0, 1}}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{1247., {286., 293.}},
+     ImageSizeCache->{1187., {254., 260.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -815,12 +834,15 @@ $CellContext`backglass$$, $CellContext`isRoof$$, $CellContext`isBack$$]]}],
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{{3.641992342493108*^9, 3.6419923698612165`*^9}}]
+ CellChangeTimes->{{3.641992342493108*^9, 3.6419923698612165`*^9}, 
+   3.7927615707204046`*^9, {3.7927616356938477`*^9, 3.792761647843935*^9}, 
+   3.792762300960789*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"7029d518-4716-4d17-87ac-1688ee04bdce"]
 }, Open  ]]
 },
-WindowSize->{1920, 997},
+WindowSize->{1500, 927},
 WindowMargins->{{-8, Automatic}, {Automatic, -8}},
-FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -834,13 +856,13 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 23263, 494, 1499, "Input"],
+Cell[558, 20, 24778, 514, 2213, "Input",ExpressionUUID->"61936018-c444-4484-850b-7ee04129b240",
+ InitializationCell->True],
 Cell[CellGroupData[{
-Cell[23846, 518, 7384, 170, 392, "Input"],
-Cell[31233, 690, 6774, 127, 629, "Output"]
+Cell[25361, 538, 8052, 176, 713, "Input",ExpressionUUID->"1062efef-6826-466b-b694-581fb3d700f7"],
+Cell[33416, 716, 6801, 123, 533, "Output",ExpressionUUID->"7029d518-4716-4d17-87ac-1688ee04bdce"]
 }, Open  ]]
 }
 ]
 *)
 
-(* End of internal cache information *)
