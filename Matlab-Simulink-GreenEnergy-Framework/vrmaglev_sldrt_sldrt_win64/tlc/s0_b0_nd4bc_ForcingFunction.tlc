@@ -1,0 +1,49 @@
+%implements s0_b0_nd4bc_ForcingFunction "C"
+
+%function ForcingFunction(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+XDot_vrmaglev_sldrt_T *_rtXdot;
+boolean_T lsat;
+boolean_T usat;
+%closefile localVarDecl
+_rtXdot = %<(SLibCG_SE(SLibGetContStatesDerivativeStructPtr()))>;
+/* {S!d600}ForcingFunction for StateSpace: '<Root>/Analog Filter Design' */
+_rtXdot->AnalogFilterDesign_CSTATE[0] = 0.0;
+_rtXdot->AnalogFilterDesign_CSTATE[1] = 0.0;
+_rtXdot->AnalogFilterDesign_CSTATE[0] += vrmaglev_sldrt_P.AnalogFilterDesign_A[0] * vrmaglev_sldrt_X.AnalogFilterDesign_CSTATE[0];
+_rtXdot->AnalogFilterDesign_CSTATE[0] += vrmaglev_sldrt_P.AnalogFilterDesign_A[1] * vrmaglev_sldrt_X.AnalogFilterDesign_CSTATE[1];
+_rtXdot->AnalogFilterDesign_CSTATE[1] += vrmaglev_sldrt_P.AnalogFilterDesign_A[2] * vrmaglev_sldrt_X.AnalogFilterDesign_CSTATE[0];
+_rtXdot->AnalogFilterDesign_CSTATE[0] += vrmaglev_sldrt_P.AnalogFilterDesign_B * vrmaglev_sldrt_B.ZeroOrderHold;
+/* {S!d602}ForcingFunction for Integrator: '<S3>/position' */
+lsat = (vrmaglev_sldrt_X.position_CSTATE <= vrmaglev_sldrt_P.position_LowerSat);
+usat = (vrmaglev_sldrt_X.position_CSTATE >= vrmaglev_sldrt_P.position_UpperSat);
+if (((!lsat) && (!usat)) || (lsat && (vrmaglev_sldrt_B.velocity > 0.0)) || (usat && (vrmaglev_sldrt_B.velocity < 0.0))) {
+    _rtXdot->position_CSTATE = vrmaglev_sldrt_B.velocity;
+} else {
+    /* in saturation */
+    _rtXdot->position_CSTATE = 0.0;
+}
+/* {E!d602}End of ForcingFunction for Integrator: '<S3>/position' */
+
+/* {S!d604}ForcingFunction for TransferFcn: '<S3>/Power amplifier and coil' */
+_rtXdot->Poweramplifierandcoil_CSTATE = 0.0;
+_rtXdot->Poweramplifierandcoil_CSTATE += vrmaglev_sldrt_P.Poweramplifierandcoil_A * vrmaglev_sldrt_X.Poweramplifierandcoil_CSTATE;
+_rtXdot->Poweramplifierandcoil_CSTATE += vrmaglev_sldrt_B.DAconvertersaturation;
+/* {S!d606}ForcingFunction for Integrator: '<S3>/velocity' */
+_rtXdot->velocity_CSTATE = vrmaglev_sldrt_B.um;
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedForcingFunctionLocalVars", localVarDecl)>
+%endfunction
+%function ForcingFunctionFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void ForcingFunction(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 6, fcnProtoType)>
+%endfunction

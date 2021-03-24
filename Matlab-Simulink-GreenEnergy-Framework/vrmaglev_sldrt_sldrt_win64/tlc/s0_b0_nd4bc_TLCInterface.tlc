@@ -1,0 +1,82 @@
+%implements s0_b0_nd4bc_TLCInterface "C"
+
+%function getInputAddr_0_1_0_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&vrmaglev_sldrt_B.Sum2"
+%endfunction
+
+%function getInput_0_1_0_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "vrmaglev_sldrt_B.Sum2"
+%endfunction
+
+%function getInputAddr_0_1_0_1_0_0_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&vrmaglev_sldrt_B.BypassFilter"
+%endfunction
+
+%function getInput_0_1_0_1_0_0_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "vrmaglev_sldrt_B.BypassFilter"
+%endfunction
+
+%function getDWorkAddr_0_1_0_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&vrmaglev_sldrt_DW.Scope_PWORK"
+%endfunction
+
+%function getDWork_0_1_0_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "vrmaglev_sldrt_DW.Scope_PWORK"
+%endfunction
+
+%function getInputAddr_0_1_0_3_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&vrmaglev_sldrt_B.Sum2"
+%endfunction
+
+%function getInput_0_1_0_3_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "vrmaglev_sldrt_B.Sum2"
+%endfunction
+
+%function getInputAddr_0_1_0_3_0_0_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&vrmaglev_sldrt_B.BypassFilter"
+%endfunction
+
+%function getInput_0_1_0_3_0_0_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "vrmaglev_sldrt_B.BypassFilter"
+%endfunction
+
+%function getDWorkAddr_0_1_0_3_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&vrmaglev_sldrt_DW.Scope_PWORK"
+%endfunction
+
+%function getDWork_0_1_0_3_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "vrmaglev_sldrt_DW.Scope_PWORK"
+%endfunction
+
+%function getInputAddr_0_4_0_3_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&vrmaglev_sldrt_B.Assignment" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_0_4_0_3_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "vrmaglev_sldrt_B.Assignment" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_0_4_0_3_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&vrmaglev_sldrt_DW.VRSink_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_0_4_0_3_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "vrmaglev_sldrt_DW.VRSink_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+

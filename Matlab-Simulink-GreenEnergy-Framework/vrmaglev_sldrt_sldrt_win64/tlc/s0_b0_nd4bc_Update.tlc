@@ -1,0 +1,23 @@
+%implements s0_b0_nd4bc_Update "C"
+
+%function Update(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+if (%<(SLibCGIRIsSampleHit(1, 0))>) {
+    /* {S!d588}Update for UnitDelay: '<S6>/Unit Delay' */
+    vrmaglev_sldrt_DW.UnitDelay_DSTATE = vrmaglev_sldrt_B.Switch1;
+    /* {S!d590}Update for UnitDelay: '<S2>/Unit Delay' */
+    vrmaglev_sldrt_DW.UnitDelay_DSTATE_a = vrmaglev_sldrt_B.Sum;
+}
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function UpdateFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Update(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 4, fcnProtoType)>
+%endfunction
