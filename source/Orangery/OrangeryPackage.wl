@@ -1,0 +1,5 @@
+(* ::Package:: *)
+
+BeginPackage["Orangery`"]
+
+EndPackage[]
