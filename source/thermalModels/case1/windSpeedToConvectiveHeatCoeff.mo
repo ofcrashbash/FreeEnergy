@@ -1,0 +1,27 @@
+model windSpeedToConvectiveHeatCoeff
+  Modelica.Blocks.Interfaces.RealInput wind_speed "https://en.wikipedia.org/wiki/Wind_speed" annotation(Placement(visible = true, transformation(origin = {-148.232, 0}, extent = {{-20, -20}, {20, 20}}, rotation = 0), iconTransformation(origin = {-90, -0}, extent = {{-20, -20}, {20, 20}}, rotation = 0)));
+  Modelica.Blocks.Interfaces.RealOutput convective_heat_coeff "https://en.wikipedia.org/wiki/Heat_transfer_coefficient" annotation(Placement(visible = true, transformation(origin = {150, -0}, extent = {{-20, -20}, {20, 20}}, rotation = 0), iconTransformation(origin = {100, -0}, extent = {{-20, -20}, {20, 20}}, rotation = 0)));
+  Modelica.Blocks.Logical.Switch switch1 annotation(Placement(visible = true, transformation(origin = {70, -0}, extent = {{-28.511, -28.511}, {28.511, 28.511}}, rotation = 0)));
+  Modelica.Blocks.Logical.LessThreshold lessThreshold(threshold = 4.88) annotation(Placement(visible = true, transformation(origin = {-40, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Blocks.Math.Add add annotation(Placement(visible = true, transformation(origin = {-40, 32.699}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Blocks.Math.Exp exp annotation(Placement(visible = true, transformation(origin = {-37.202, -55}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Blocks.Math.Gain gain(k = 4) annotation(Placement(visible = true, transformation(origin = {-85, 26.742}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Blocks.Sources.Constant const(k = 5.6) annotation(Placement(visible = true, transformation(origin = {-85, 57.769}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Blocks.Math.Log log annotation(Placement(visible = true, transformation(origin = {-70, -55}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Blocks.Math.Gain gain1(k = 0.78) annotation(Placement(visible = true, transformation(origin = {-100, -55}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Blocks.Math.Gain gain2(k = 7.2) annotation(Placement(visible = true, transformation(origin = {-2.508, -55}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+equation
+  connect(lessThreshold.u, wind_speed) annotation(Line(visible = true, origin = {-100.116, 0}, points = {{48.116, 0}, {-48.116, 0}}, color = {1, 37, 163}));
+  connect(switch1.u2, lessThreshold.y) annotation(Line(visible = true, origin = {3.394, 0}, points = {{32.394, 0}, {-32.394, 0}}, color = {190, 52, 178}));
+  connect(gain.u, wind_speed) annotation(Line(visible = true, origin = {-123.699, 13.371}, points = {{26.699, 13.371}, {-1.083, 13.371}, {-1.083, -13.371}, {-24.533, -13.371}}, color = {1, 37, 163}));
+  connect(gain.y, add.u2) annotation(Line(visible = true, origin = {-59, 26.72}, points = {{-15, 0.021}, {4, 0.021}, {4, -0.021}, {7, -0.021}}, color = {1, 37, 163}));
+  connect(const.y, add.u1) annotation(Line(visible = true, origin = {-59, 48.234}, points = {{-15, 9.535}, {4, 9.535}, {4, -9.535}, {7, -9.535}}, color = {1, 37, 163}));
+  connect(gain1.u, wind_speed) annotation(Line(visible = true, origin = {-130.058, -27.5}, points = {{18.058, -27.5}, {5.058, -27.5}, {5.058, 27.5}, {-18.174, 27.5}}, color = {1, 37, 163}));
+  connect(gain1.y, log.u) annotation(Line(visible = true, origin = {-85.5, -55}, points = {{-3.5, -0}, {3.5, 0}}, color = {1, 37, 163}));
+  connect(log.y, exp.u) annotation(Line(visible = true, origin = {-54.101, -55}, points = {{-4.899, 0}, {4.899, 0}}, color = {1, 37, 163}));
+  connect(exp.y, gain2.u) annotation(Line(visible = true, origin = {-20.355, -55}, points = {{-5.847, 0}, {5.847, 0}}, color = {1, 37, 163}));
+  connect(switch1.u3, gain2.y) annotation(Line(visible = true, origin = {40.54, -38.904}, points = {{-4.752, 16.096}, {-7.824, 16.096}, {-7.824, -16.096}, {-32.048, -16.096}}, color = {1, 37, 163}));
+  connect(switch1.y, convective_heat_coeff) annotation(Line(visible = true, origin = {125.681, -0}, points = {{-24.319, 0}, {24.319, -0}}, color = {1, 37, 163}));
+  connect(add.y, switch1.u1) annotation(Line(visible = true, origin = {18.09, 27.754}, points = {{-47.09, 4.945}, {14.697, 4.945}, {14.697, -4.945}, {17.697, -4.945}}, color = {1, 37, 163}));
+  annotation(Icon(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10}), graphics = {Text(visible = true, extent = {{-31.945, -23.322}, {31.945, 23.322}}, textString = "k=F(V)"), Text(visible = true, origin = {-80, 23.007}, extent = {{-13.479, -9.911}, {13.479, 9.911}}, textString = "V"), Text(visible = true, origin = {75.924, 24.601}, extent = {{-11.504, -11.151}, {11.504, 11.151}}, textString = "k")}), Diagram(coordinateSystem(extent = {{-148.5, -105}, {148.5, 105}}, preserveAspectRatio = true, initialScale = 0.1, grid = {5, 5}), graphics = {Text(visible = true, origin = {-0, 99.02}, extent = {{-143.641, -30.98}, {143.641, 30.98}}, textString = "source link: https://help.iesve.com/ve2018/convection_heat_transfer.htm?ms=ZxgAAEAEAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAQGcBMHxwAwR4CA%3D%3D&st=MA%3D%3D&sct=NDAw&mw=NDY2"), Text(visible = true, origin = {-53.081, -82.5}, extent = {{-40.263, -7.5}, {40.263, 7.5}}, textString = "h = 7.2 * v^0.78, v >= 4.88"), Text(visible = true, origin = {-53.028, 77.5}, extent = {{-40, -7.5}, {40, 7.5}}, textString = "h = 4*v + 5.6, v < 4.88")}));
+end windSpeedToConvectiveHeatCoeff;
