@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- The root node is the composite-model -->
+<Model Name="CompositeModel1">
+  <!-- List of connected sub-models -->
+  <SubModels/>
+  <!-- List of TLM connections -->
+  <Connections/>
+  <!-- Parameters for the simulation -->
+  <SimulationParams StartTime="0" StopTime="1"/>
+</Model>
